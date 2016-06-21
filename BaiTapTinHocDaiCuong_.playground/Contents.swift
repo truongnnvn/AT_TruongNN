@@ -252,25 +252,82 @@ func goctoado(xa: Double, ya: Double, xo: Double, yo:Double, xb: Double, yb: Dou
 }
 
 //8.
-func giaitamgiac(a: Double, b: Double, c: Double) -> (goca: Double, gocb: Double, gocc: Double, goctheodo: Double) {
-    var cos = (b * b + c * c - a * a) / (2 * b * c)
+func giaitamgiac(a: Double, b: Double, c: Double) -> (goca: Double, gocb: Double, gocc: Double) {
+    var cos:Double = 0
     var goc:Double = 0
-    var tg:Double = 0
+    var goca:Double = 0
+    var gocb:Double = 0
+    var gocc:Double = 0
+    cos = (b * b + c * c - a * a) / (2 * b * c)
     if cos == 0 {
         goc = M_PI / 2
     } else {
         if cos == -1 {
             goc = M_PI
         } else {
-            tg = sqrt(1 - cos * cos) / cos
+            let tg = sqrt(1 - cos * cos) / cos
             goc = atan(tg)
+            if goc < 0 {
+                goc = M_PI / 2 - goc
+                goca = goc
+            }
         }
     }
+    cos = (a * a + c * c - b * b) / (2 * a * c)
+    if cos == 0 {
+        goc = M_PI / 2
+    } else {
+        if cos == -1 {
+            goc = M_PI
+        } else {
+            let tg = sqrt(1 - cos * cos) / cos
+            goc = atan(tg)
+            if goc < 0 {
+                goc = M_PI / 2 - goc
+                gocb = goc
+            }
+        }
+    }
+    cos = (a * a + b * b - c * c) / (2 * a * b)
+    if cos == 0 {
+        goc = M_PI / 2
+    } else {
+        if cos == -1 {
+            goc = M_PI
+        } else {
+            let tg = sqrt(1 - cos * cos) / cos
+            goc = atan(tg)
+            if goc < 0 {
+                goc = M_PI / 2 - goc
+                gocc = goc
+            }
+        }
+    }
+    return(goca, gocb, gocc)
 }
+let t = giaitamgiac(2, b: 2, c: 3)
+print("\(t.goca), \(t.gocb), \(t.gocc)")
 
+//9.
 
-
-
+func tienganh(n: Int) -> String {
+    var message:String = ""
+    switch n {
+    case 1: message = "One"
+    case 2: message = "Two"
+    case 3: message = "Three"
+    case 4: message = "Four"
+    case 5: message = "Five"
+    case 6: message = "Six"
+    case 7: message = "Seven"
+    case 8: message = "Eight"
+    case 9: message = "Nine"
+    case 10: message = "Ten"
+    default:
+        break
+    }
+    return message
+}
 
 
 
