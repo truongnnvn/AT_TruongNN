@@ -1,6 +1,7 @@
 //: Playground - noun: a place where people can play
 
 import UIKit
+/*
 ////--------------Tinh toan cac bieu thuc--------
 //1.
 let pi = M_PI
@@ -329,15 +330,64 @@ func tienganh(n: Int) -> String {
     return message
 }
 
+//10.
+func tinhtiendien(socu: Double, somoi: Double, loaiho: String) -> Double {
+    let danhsach:[String:Double] = ["ho dan": 60, "ho can bo": 90, "ho kinh doanh": 200, "ho san xuat": 450]
+    var tiendm:Double = 0
+    var tienvuot:Double = 0
+    var tongtien:Double = 0
+    let DGDM:Double = 1000
+    let GNDM:Double = 2000
+    let kwhdm:Double = 0
+    let kwhtt = somoi - socu
+    if (kwhtt < danhsach[loaiho]) {
+        tiendm = kwhtt * DGDM
+        tienvuot = 0
+    } else {
+        tiendm = kwhdm * DGDM
+        tienvuot = (kwhtt - kwhdm) * GNDM
+    }
+    tongtien = tiendm + tienvuot
+    return tongtien
+}
+print( tinhtiendien(100, somoi: 350, loaiho: "ho can bo"))
+
+*/
+//11. in mua
+func inmua(mua: Int) -> String {
+    let dicmua:[Int:String] = [1: "xuan", 2: "ha", 3: "thu", 4: "dong"]
+    return dicmua[mua]!
+}
+inmua(3)
+
+//12.
+
+func hinhchunhat(dai: Double, rong: Double) -> Double {
+    return dai * rong
+}
+
+func hinhtamgiac(day:Double, cao: Double) -> Double {
+    return day * cao / 2
+}
+
+func hinhvuong(canh: Double) -> Double {
+    return canh * canh
+}
+
+func hinhtron(radius: Double) -> Double {
+    return radius * radius * M_PI
+}
+
+func hinhthang(daylon: Double, daybe: Double, cao:Double) -> Double {
+    return ((daylon + daybe) * cao) / 2
+}
 
 
 
 
-
-
-
-
-
+func tinhdientich(hinh: String) -> Double {
+    let dic = ["chunhat": hinhchunhat(<#T##dai: Double##Double#>, rong: <#T##Double#>)]
+}
 
 
 
