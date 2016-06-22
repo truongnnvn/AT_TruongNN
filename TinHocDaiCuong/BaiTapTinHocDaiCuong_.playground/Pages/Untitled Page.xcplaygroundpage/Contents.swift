@@ -1,6 +1,7 @@
 //: Playground - noun: a place where people can play
 
 import UIKit
+
 //--------------PHAN 1-----------------------
 //--------Tinh toan cac bieu thuc------------
 //1.
@@ -526,6 +527,283 @@ func taocay(heigh:Int) {
 taocay(6)
 
 //13. trung binh cong, trung binh nhan
+
+func average(arr: [Int]) -> (tbc: Double, tbn: Double) {
+    var tbc:Double = 0
+    var tbn:Double = 1
+    for i in 0...arr.count {
+        tbc = tbc + Double(i)
+        tbn = tbn * Double(i)
+    }
+    return (tbc / Double(arr.count), sqrt(tbn))
+}
+let arr123 = [1, 2, 3, 4, 5]
+let fff = average(arr123)
+print(fff.tbc, fff.tbn)
+
+//17. sum of n
+
+func sumofn(n: Int) -> Int {
+    var s = 0
+    var t = n
+    while (t > 0) {
+        s = s + t % 10
+        t = t / 10
+    }
+    return s
+}
+sumofn(12)
+
+//22. tim uoc so cua n
+
+func uocso(n: Int) -> [Int] {
+    var arr = [Int]()
+    for i in 1...n {
+        if (n % i) == 0 {
+            arr.append(i)
+        }
+    }
+    return arr
+}
+uocso(100)
+
+//23. dung while tinh so pi
+
+func calculatepi() -> Double {
+    var a:Double = 1
+    var b:Double = 1
+    var repeatStep = 0
+    var n:Double = 3
+    let epsilon = 0.001
+    while (fabs(b) > epsilon) {
+        b = -b * (n - 2) / n
+        a = a + b
+        n = n + 2
+        repeatStep += 1
+    }
+    return (a * 4)
+}
+print(calculatepi())
+print(M_PI)
+
+//30. Tao day Fibonacy
+func fibonacy(n: Int) -> [Int] {
+    var fib1 = 0
+    var fib2 = 1
+    var fib = 0
+    var arr = [Int]()
+    while (fib1 + fib2 < n) {
+        fib = fib1 + fib2
+        arr.append(fib)
+        fib2 = fib1
+        fib1 = fib
+    }
+    return arr
+}
+print(fibonacy(100))
+
+//------------Phan 4------------------
+//-----------Chuong Trinh Con--------
+
+//1.
+func giaithua(n: Int) -> Int {
+    var s = 1
+    for i in 1...n {
+        s = s * i
+    }
+    return s
+}
+
+func tinh(n: Double) -> Double {
+    var a:Double = n
+    var i:Double = 3
+    var s:Double = 0
+    let epsilon = 0.001
+    while (fabs(a) >= epsilon) {
+        s += a
+        a = a * (-(n * n / (i * (i - 1))))
+        i = i + 2
+    }
+    return s
+}
+print(tinh(3))
+
+//5. kiem tra so chinh phuong
+
+func CheckSquareNumber(n: Int) -> Bool {
+    for i in 1...Int((sqrt(Double(n)))) {
+        if (i * i == n) {
+            return true
+        }
+    }
+    return false
+}
+print(CheckSquareNumber(9))
+
+//6. Pitago
+func pitago(x: Int, y: Int, z: Int) -> Bool {
+    if (x * x + y * y == z * z) || (x * x + z * z == y * y) || (y * y + z * z == x * x) {
+        return true
+    }
+    return false
+}
+
+//8. tong lap phuong
+func tonglapphuong(n: Int) -> Int {
+    var i = 0
+    var sum = 0
+    var temp = 0
+    var t = n
+    while (t > 0) {
+        i += 1
+        temp = t % 10
+        sum = sum + temp * temp * temp
+        t = t / 10
+    }
+    return sum
+}
+print(tonglapphuong(123))
+
+
+//9. To hop chap k cua n
+func tohop(k: Int, n: Int) -> Double {
+    return (Double(giaithua(n) / giaithua(k) * giaithua(n - k)))
+}
+print(tohop(2, n: 3))
+
+
+//10. Ham de quy tinh tong S
+func dequy(x: Double, n: Int) -> Double {
+    var dq:Double = 0
+    if (n == 0) {
+        dq = 1
+    } else {
+        dq = x * dequy(x, n: n - 1)
+    }
+    return dq
+}
+print(dequy(2, n: 4))
+
+func tinhs(n: Int, x: Double) -> Double {
+    var s:Double = 1
+    for i in 1...n {
+        s = s + 1 / dequy(x, n: i)
+    }
+    return s
+}
+print(tinhs(1, x: 3))
+
+//15. uoc chung lon nhat va boi chung nho nhat
+
+func ucln(a: Int, b: Int) -> Double {
+    var a = abs(a)
+    var b = abs(b)
+    while (a != 0 && b != 0) {
+        if (a > b) {
+            a -= b
+        } else {
+            b -= a
+        }
+    }
+    if a == 0 {
+        return Double(b)
+    } else  {
+        return Double(a)
+    }
+}
+
+func bcnn(a: Int, b: Int) -> Double {
+    return (Double(a * b) / (ucln(a, b: b)))
+}
+print(bcnn(3, b: 8))
+
+//22. kiem tra so nguyen co bang tong giai thua cua no
+func checkgt(n: Int) -> Bool {
+    var s = 0
+    let m = n
+    var t = 0
+    var k = n
+    while (k > 0) {
+        t = k % 10
+        s += giaithua(t)
+        k = k / 10
+    }
+    if s == m {
+        return true
+    } else {
+        return false
+    }
+}
+print(checkgt(145))
+
+//--------------PHAN 5-----------------
+//------------Mang 1 Chieu----------------
+
+//1.
+
+func printfibonacy(n: Int) -> [Int] {
+    var arr1 = fibonacy(100)
+    var arr2 = [Int]()
+    for i in 0..<n {
+        arr2.append(arr1[i])
+    }
+    return arr2
+}
+print(printfibonacy(5))
+
+//3.
+func sortArray(arr1: [Int]) {
+    var arr = arr1
+    var i = 0
+    var j = arr.count - 1
+    while (i < j) {
+        if (arr[i] % 5 == 0 && arr[i] % 2 == 1) {
+            i += 1
+        }
+        if (arr[j] % 5 != 0 && arr[j] % 2 == 0) {
+            j -=  1
+        }
+        swap(&arr[i], &arr[j])
+    }
+}
+
+let aaa = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+sortArray(aaa)
+var arr = [Int]()// khởi tạo 1 mảng rỗng có kiểu dữ liệu là Int
+var arr1: [Int] = []// Gán 1 mảng rỗng cho một mảng kiểu Int
+var a = 10// Nếu khai báo a = 10 thì mặc định a sẽ có kiểu Int. Nên để mặc định vì os nó sẽ linh động cấp phát bộ nhớ khi có sự nâng cấp sau này
+var b = 5.5 // Mặc định sẽ nhận kiểu Double
+
+var str = "Hello" //Tự động nhận kiểu String
+
+func hamA(a a: Int) {
+} // Tường minh hơn khi gọi hàm
+
+func hamA(a a: Int, b:Int = 10) {
+} // Nếu hàm có 1 parameter được gán trước giá trị thì ta sẽ có 2 cách gọi hàm. Hàm sẽ chứa hoặc không chứa parameter đó
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
