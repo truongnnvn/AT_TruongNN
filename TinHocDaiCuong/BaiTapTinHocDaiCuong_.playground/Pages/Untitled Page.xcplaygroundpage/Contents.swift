@@ -2,7 +2,8 @@
 
 import UIKit
 /*
-////--------------Tinh toan cac bieu thuc--------
+//--------------PHAN 1-----------------------
+//--------Tinh toan cac bieu thuc------------
 //1.
 let pi = M_PI
 let g = 9.18
@@ -87,7 +88,9 @@ func sh(x: Double) -> Double {
 }
 print("Ket qua la: = \(sh(2))")
 
-//----Phan 2----Lenh dieu kien
+ 
+//----------------PHAN 2---------------
+//------------Lenh dieu kien-----------
 //1.
 func hephuongtrinh(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double) {
     let dinhthuc = a * e - d * b
@@ -354,57 +357,176 @@ print( tinhtiendien(100, somoi: 350, loaiho: "ho can bo"))
 
 */
 //11. in mua
-func inmua(mua: Int) -> String {
-    let dicmua:[Int:String] = [1: "xuan", 2: "ha", 3: "thu", 4: "dong"]
-    return dicmua[mua]!
-}
-inmua(3)
+//func inmua(mua: Int) -> String {
+//    let dicmua:[Int:String] = [1: "xuan", 2: "ha", 3: "thu", 4: "dong"]
+//    return dicmua[mua]!
+//}
+//inmua(3)
+//
+////12.
+//
+//func hinhchunhat(dai: Double, rong: Double) -> Double {
+//    return dai * rong
+//}
+//
+//func hinhtamgiac(day:Double, cao: Double) -> Double {
+//    return day * cao / 2
+//}
+//
+//func hinhvuong(canh: Double) -> Double {
+//    return canh * canh
+//}
+//
+//func hinhtron(radius: Double) -> Double {
+//    return radius * radius * M_PI
+//}
+//
+//func hinhthang(daylon: Double, daybe: Double, cao:Double) -> Double {
+//    return ((daylon + daybe) * cao) / 2
+//}
+//
+//func tinhdientich(hinh: String) -> Double {
+//    var dientich:Double = 0
+//    switch hinh {
+//    case "n":
+//        dientich = hinhchunhat(1, rong: 2)
+//    case "g":
+//        dientich = hinhtamgiac(1, cao: 2)
+//    case "v":
+//        dientich = hinhvuong(3)
+//    case "t":
+//        dientich = hinhtron(3)
+//    case "h":
+//        dientich = hinhthang(3, daybe: 2, cao: 3)
+//    default:
+//        break
+//    }
+//    return dientich
+//}
+//let dt = tinhdientich("v")
+//
+////----------------PHAN 3---------------
+////------------Lenh Vong Lap-----------
+//
+////1. Bang cuu chuong
+//func bangcuuchuong() {
+//    for j in 1...10 {
+//        for i in 2...9 {
+//            print("\(j) x \(i) = \(j * i)" )
+//        }
+//    }
+//}
+//bangcuuchuong()
+//
+////2. bai toan co
+//func baitoanco() -> (dung: Int, nam: Int, gia: Int) {
+//    var dung:Int = 0
+//    var nam:Int = 0
+//    var gia:Int = 0
+//    for x in 0...20 {
+//        for y in 0...33 {
+//            for z in 0...300 {
+//                if ((15 * x + 9 * y + z == 300) && (x + y + z == 100)) {
+//                    dung = x; nam = y; gia = z
+//                }
+//            }
+//        }
+//    }
+//    return (dung, nam, gia)
+//}
+//let baitoan = baitoanco()
+//print("dung: =\(baitoan.dung) nam: = \(baitoan.nam) gia: =\(baitoan.gia)")
+//
+////3. vua ga vua cho
+//func vuagavuacho() -> (soga: Int, socho: Int) {
+//    var soga:Int = 0
+//    var socho:Int = 0
+//    for x in 0...36 {
+//        for y in 0...36 {
+//            if ((2 * x + 4 * y == 100) && (x + y == 36)) {
+//                soga = x; socho = y
+//            }
+//        }
+//    }
+//    return (soga, socho)
+//}
+//let vuagacho = vuagavuacho()
+//print("so ga: = \(vuagacho.soga), so cho: = \(vuagacho.socho)")
+//
+////4. tao bang so
+//func taobangso() {
+//    for i in 0..<100 {
+//        if (i % 10 == 0) {
+//            print("\n\(i)")
+//        } else {
+//            print(i)
+//        }
+//    }
+//}
+//taobangso()
 
-//12.
+//5. in hinh
+//func inhinha(heigh: Int) {
+//    var chuoi:String = ""
+//    for i in 1...heigh {
+//       chuoi = ""
+//        for _ in 1...i {
+//            chuoi += "*"
+//        }
+//    print(chuoi)
+//    }
+//}
+//inhinha(3)
+//
+//func inhinhb(heigh: Int) {
+//    var chuoi:String = ""
+//    for i in 1...heigh {
+//        chuoi = ""
+//        for _ in i...heigh {
+//            chuoi += "$"
+//        }
+//        print(chuoi)
+//    }
+//}
+//inhinhb(3)
 
-func hinhchunhat(dai: Double, rong: Double) -> Double {
-    return dai * rong
-}
+//func inhinhc(heigh: Int) {
+//    var chuoi:String = ""
+//    //var j:Int = heigh - 1
+//    for i in 1...heigh {
+//        chuoi = ""
+//        for j in 0..<heigh - i {
+//            chuoi += " "
+//        }
+//        for j in 1...(i * 2 - 1) {
+//            chuoi += "*"
+//        }
+//        print(chuoi)
+//    }
+//}
+//inhinhc(10)
 
-func hinhtamgiac(day:Double, cao: Double) -> Double {
-    return day * cao / 2
-}
+//6. tao cay chu so
+//func taocay(heigh:Int) {
+//    var chuoi:String = ""
+//    for i in 1...heigh {
+//        chuoi = ""
+//        for _ in 0..<heigh - i {
+//            chuoi += " "
+//        }
+//        for j in 1...(2 * i - 1) {
+//            if (j < i) {
+//                chuoi += "\((j + i - 1) % 10)"
+//            } else {
+//                chuoi += "\((3 * i - 1 - j) % 10)"
+//            }
+//        }
+//        print(chuoi)
+//    }
+//}
+//taocay(6)
 
-func hinhvuong(canh: Double) -> Double {
-    return canh * canh
-}
-
-func hinhtron(radius: Double) -> Double {
-    return radius * radius * M_PI
-}
-
-func hinhthang(daylon: Double, daybe: Double, cao:Double) -> Double {
-    return ((daylon + daybe) * cao) / 2
-}
-
-
-
-
-func tinhdientich(hinh: String) -> Double {
-    let dic = ["chunhat": hinhchunhat(<#T##dai: Double##Double#>, rong: <#T##Double#>)]
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//13. trung binh cong, trung binh nhan
 
 
 
