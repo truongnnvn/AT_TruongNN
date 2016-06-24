@@ -75,13 +75,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordTextField.endEditing(true)
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        usernameTextField.resignFirstResponder()
-        passwordTextField.resignFirstResponder()
-        actionLogin(UIButton)
-        return true
-    }
-    
     //MARK: - Alert
     
     func Alert(title title: String, message: String) {
@@ -89,5 +82,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
         alert.addAction(okAction)
         self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        let nextTag: NSInteger = textField.tag + 1;
+        if let nextResponder: UIResponder! = textField.superview!.viewWithTag(nextTag) {
+            nextResponder.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+            actionLogin(UIButton)
+        }
+        return false
     }
 }
