@@ -33,6 +33,6 @@ class RootViewController: UIViewController {
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "HH:mm:ss"
         let timer = dateFormatter.stringFromDate(currentDate)
-        displayLabel.text = timer
+        self.displayLabel.text = timer
     }
 }

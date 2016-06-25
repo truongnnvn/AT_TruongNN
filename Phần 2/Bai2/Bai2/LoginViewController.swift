@@ -27,7 +27,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func actionLogin(sender: AnyObject) {
-        if usernameTextField.text == "" || passwordTextField.text == "" {
+        if self.usernameTextField.text == "" || self.passwordTextField.text == "" {
             Alert(title: "Message", message: "Please input Username or Password")
         } else {
             let vc = HomeViewController(nibName: "HomeViewController", bundle: nil)
@@ -71,8 +71,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        usernameTextField.endEditing(true)
-        passwordTextField.endEditing(true)
+        self.usernameTextField.endEditing(true)
+       self.passwordTextField.endEditing(true)
     }
     
     //MARK: - Alert
@@ -90,7 +90,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             nextResponder.becomeFirstResponder()
         } else {
             textField.resignFirstResponder()
-            actionLogin(UIButton)
+            self.actionLogin(UIButton)
         }
         return false
     }

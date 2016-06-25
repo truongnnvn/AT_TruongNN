@@ -10,17 +10,15 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var inputTF: UITextField!
+    @IBOutlet weak var inputTextField: UITextField!
     @IBOutlet weak var displayLabel: UILabel!
-    
-    var isPresentKeyboard = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        displayLabel.hidden = true
-        inputTF.delegate = self
-        inputTF.returnKeyType = .Done
-        inputTF.clearButtonMode = .WhileEditing
+        self.displayLabel.hidden = true
+        self.inputTextField.delegate = self
+        self.inputTextField.returnKeyType = .Done
+        self.inputTextField.clearButtonMode = .WhileEditing
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.keyboardWillShow(_:)), name:UIKeyboardWillShowNotification, object: self.view.window)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.keyboardWillHide(_:)), name:UIKeyboardWillHideNotification, object: self.view.window)
     }
@@ -28,7 +26,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func keyboardWillHide(sender: NSNotification) {
         let userInfo: [NSObject : AnyObject] = sender.userInfo!
         let keyboardSize: CGSize = userInfo[UIKeyboardFrameBeginUserInfoKey]!.CGRectValue.size
-        if ((self.view.frame.height - (self.inputTF.frame.origin.y + self.inputTF.frame.height)) < keyboardSize.height) {
+        if ((self.view.frame.height - (self.inputTextField.frame.origin.y + self.inputTextField.frame.height)) < keyboardSize.height) {
             self.view.frame.origin.y += keyboardSize.height
         }
     }
@@ -38,7 +36,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         let keyboardSize: CGSize = userInfo[UIKeyboardFrameBeginUserInfoKey]!.CGRectValue.size
         let offset: CGSize = userInfo[UIKeyboardFrameEndUserInfoKey]!.CGRectValue.size
-        if ((self.view.frame.height - (self.inputTF.frame.origin.y + self.inputTF.frame.height)) < keyboardSize.height) {
+        if ((self.view.frame.height - (self.inputTextField.frame.origin.y + self.inputTextField.frame.height)) < keyboardSize.height) {
             if keyboardSize.height == offset.height {
                 if self.view.frame.origin.y == 0 {
                     UIView.animateWithDuration(0.1, animations: { () -> Void in
@@ -59,21 +57,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        inputTF.endEditing(true)
+        self.inputTextField.endEditing(true)
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        inputTF.resignFirstResponder()
-        okButton(UIButton)
+        self.inputTextField.resignFirstResponder()
+        self.okButton(UIButton)
         return true
     }
     
     @IBAction func okButton(sender: AnyObject) {
-        displayLabel.hidden = false
-        if inputTF.text == "" {
-            displayLabel.text = "Please input data"
+        self.displayLabel.hidden = false
+        if self.inputTextField.text == "" {
+            self.displayLabel.text = "Please input data"
         } else {
-            displayLabel.text = inputTF.text
+            self.displayLabel.text = self.inputTextField.text
         }
     }
 }

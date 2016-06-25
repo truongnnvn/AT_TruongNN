@@ -10,17 +10,17 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var inputTF: UITextField!
+    @IBOutlet weak var inputTextField: UITextField!
     @IBOutlet weak var displayLabel: UILabel!
     @IBOutlet weak var myScrollView: UIScrollView!
     @IBOutlet weak var okButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        displayLabel.hidden = true
-        inputTF.delegate = self
-        inputTF.returnKeyType = .Done
-        inputTF.clearButtonMode = .WhileEditing
+        self.displayLabel.hidden = true
+        self.inputTextField.delegate = self
+        self.inputTextField.returnKeyType = .Done
+        self.inputTextField.clearButtonMode = .WhileEditing
         
         let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.hideKeyboard))
         // prevents the scroll view from swallowing up the touch event of child buttons
@@ -39,19 +39,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func okButton(sender: AnyObject) {
-        displayLabel.hidden = false
-        if inputTF.text == "" {
-            displayLabel.text = "Please input data"
+        self.displayLabel.hidden = false
+        if self.inputTextField.text == "" {
+            self.displayLabel.text = "Please input data"
         } else {
-            displayLabel.text = inputTF.text
+            self.displayLabel.text = self.inputTextField.text
         }
         self.myScrollView.setContentOffset(CGPointZero, animated: true)
     }
    
     //MARK: Keyboard Avoidance
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        okButton(UIButton)
+        self.inputTextField.resignFirstResponder()
+        self.okButton(UIButton)
         return true
     }
     
@@ -78,7 +78,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     func hideKeyboard() {
-        inputTF.resignFirstResponder()
+        self.inputTextField.resignFirstResponder()
         self.myScrollView.setContentOffset(CGPointZero, animated: true)
     }
 }

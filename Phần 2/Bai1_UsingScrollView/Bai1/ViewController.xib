@@ -8,8 +8,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="Bai1" customModuleProvider="target">
             <connections>
                 <outlet property="displayLabel" destination="uv2-7T-GDh" id="zlL-bc-MHD"/>
-                <outlet property="inputTF" destination="7BV-0v-GyX" id="srU-Yg-gcj"/>
-                <outlet property="myScrollView" destination="ogT-7R-KvP" id="rgO-Bx-fxv"/>
+                <outlet property="inputTextField" destination="7BV-0v-GyX" id="zPa-Mi-D7l"/>
+                <outlet property="myScrollView" destination="ogT-7R-KvP" id="96K-O6-szu"/>
                 <outlet property="okButton" destination="9DU-HT-7GE" id="NsT-p0-6Sb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,18 +23,18 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7BV-0v-GyX">
-                            <rect key="frame" x="87" y="278" width="200" height="30"/>
+                            <rect key="frame" x="87" y="433" width="200" height="30"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uv2-7T-GDh">
-                            <rect key="frame" x="166" y="316" width="42" height="21"/>
+                            <rect key="frame" x="166" y="471" width="42" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DU-HT-7GE">
-                            <rect key="frame" x="172" y="345" width="30" height="30"/>
+                            <rect key="frame" x="172" y="500" width="30" height="30"/>
                             <state key="normal" title="OK"/>
                             <connections>
                                 <action selector="okButton:" destination="-1" eventType="touchUpInside" id="MSk-3D-CG2"/>
@@ -43,14 +43,14 @@
                     </subviews>
                     <constraints>
                         <constraint firstItem="9DU-HT-7GE" firstAttribute="centerX" secondItem="ogT-7R-KvP" secondAttribute="centerX" id="QNe-l5-6am"/>
-                        <constraint firstAttribute="bottom" secondItem="7BV-0v-GyX" secondAttribute="bottom" constant="359" id="R01-E3-dfR"/>
+                        <constraint firstAttribute="bottom" secondItem="7BV-0v-GyX" secondAttribute="bottom" constant="204" id="R01-E3-dfR"/>
                         <constraint firstItem="uv2-7T-GDh" firstAttribute="centerX" secondItem="ogT-7R-KvP" secondAttribute="centerX" id="ROc-dW-lBj"/>
                         <constraint firstItem="9DU-HT-7GE" firstAttribute="top" secondItem="uv2-7T-GDh" secondAttribute="bottom" constant="8" id="ZMt-JX-luu"/>
                         <constraint firstAttribute="trailing" secondItem="7BV-0v-GyX" secondAttribute="trailing" constant="88" id="hmH-Os-yTD"/>
                         <constraint firstItem="7BV-0v-GyX" firstAttribute="centerX" secondItem="ogT-7R-KvP" secondAttribute="centerX" id="jAX-gT-8PZ"/>
                         <constraint firstItem="7BV-0v-GyX" firstAttribute="leading" secondItem="ogT-7R-KvP" secondAttribute="leading" constant="87" id="nIl-0E-LzE"/>
                         <constraint firstItem="uv2-7T-GDh" firstAttribute="top" secondItem="7BV-0v-GyX" secondAttribute="bottom" constant="8" id="qcA-hZ-VEY"/>
-                        <constraint firstItem="7BV-0v-GyX" firstAttribute="top" secondItem="ogT-7R-KvP" secondAttribute="top" constant="278" id="wIb-EB-Bcs"/>
+                        <constraint firstItem="7BV-0v-GyX" firstAttribute="top" secondItem="ogT-7R-KvP" secondAttribute="top" constant="433" id="wIb-EB-Bcs"/>
                     </constraints>
                 </scrollView>
             </subviews>

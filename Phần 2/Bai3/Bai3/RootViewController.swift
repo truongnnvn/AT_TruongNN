@@ -25,6 +25,6 @@ class RootViewController: UIViewController, UITextFieldDelegate {
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "HH:mm:ss , EEE, dd MMM yyyy "
         let timer = dateFormatter.stringFromDate(currentDate)
-        displayLabel.text = timer
+        self.displayLabel.text = timer
     }
 }
