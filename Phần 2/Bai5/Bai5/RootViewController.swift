@@ -29,9 +29,13 @@ class RootViewController: UIViewController {
     
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if let touch = touches.first {
-            let location = touch.locationInView(self.view)
-            self.myView.center = CGPoint(x: (location.x - self.lastLocation.x) + self.myView.center.x, y: (location.y - self.lastLocation.y) + self.myView.center.y)
-            lastLocation = touch.locationInView(self.view)
+            if touch.view == myView {
+                let location = touch.locationInView(self.view)
+                self.myView.center = CGPoint(x: (location.x - self.lastLocation.x) + self.myView.center.x, y: (location.y - self.lastLocation.y) + self.myView.center.y)
+                lastLocation = touch.locationInView(self.view)
+            } else {
+                print("Its not view")
+            }
         }
     }
 }
