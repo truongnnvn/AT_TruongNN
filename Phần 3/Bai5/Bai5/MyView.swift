@@ -1,6 +1,6 @@
 //
 //  MyView.swift
-//  Bai3
+//  Bai5
 //
 //  Created by Truong Nguyen on 6/27/16.
 //  Copyright © 2016 TruongNguyen. All rights reserved.
@@ -13,7 +13,7 @@ protocol myViewDelegate {
 }
 
 class MyView: UIView {
-
+    
     var avatarImageView: UIImageView!
     var nameLabel: UILabel!
     var index = 0
@@ -51,11 +51,10 @@ class MyView: UIView {
         button.addTarget(self, action: #selector(self.tapButton(_:)), forControlEvents: .TouchUpInside)
         self.addSubview(button)
     }
-    
     @objc private func tapButton(sender: AnyObject) {
         if let delegate = self.delegate {
             delegate.didSelectMyView(self, name: self.nameLabel.text!, index: self.index)
         }
     }
-
+    
 }
