@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController" customModule="Bai6" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qa-5y-d2a">
+                    <rect key="frame" x="185" y="275" width="230" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XI1-bH-YcN">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <color key="backgroundColor" red="0.26892647159999999" green="0.82707562580000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="wya-NX-e9F"/>
+                                <constraint firstAttribute="height" constant="50" id="yN9-ci-1kr"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qL-Sg-LUi">
+                            <rect key="frame" x="60" y="0.0" width="50" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ntV-SQ-ake">
+                            <rect key="frame" x="180" y="0.0" width="50" height="50"/>
+                            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84k-fh-K1k">
+                            <rect key="frame" x="120" y="0.0" width="50" height="50"/>
+                            <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="230" id="6Uf-Gb-UO7"/>
+                        <constraint firstItem="ntV-SQ-ake" firstAttribute="height" secondItem="84k-fh-K1k" secondAttribute="height" id="6dH-Zb-Hmi"/>
+                        <constraint firstItem="ntV-SQ-ake" firstAttribute="width" secondItem="84k-fh-K1k" secondAttribute="width" id="7RR-WO-5AX"/>
+                        <constraint firstItem="9qL-Sg-LUi" firstAttribute="leading" secondItem="XI1-bH-YcN" secondAttribute="trailing" constant="10" id="8Uo-ck-0It"/>
+                        <constraint firstItem="ntV-SQ-ake" firstAttribute="centerY" secondItem="84k-fh-K1k" secondAttribute="centerY" id="BmJ-zF-9jf"/>
+                        <constraint firstItem="84k-fh-K1k" firstAttribute="height" secondItem="9qL-Sg-LUi" secondAttribute="height" id="Gzo-Pn-NPx"/>
+                        <constraint firstItem="84k-fh-K1k" firstAttribute="width" secondItem="9qL-Sg-LUi" secondAttribute="width" id="HFR-YT-9YM"/>
+                        <constraint firstItem="9qL-Sg-LUi" firstAttribute="width" secondItem="XI1-bH-YcN" secondAttribute="width" id="Hv4-oo-inD"/>
+                        <constraint firstItem="ntV-SQ-ake" firstAttribute="leading" secondItem="84k-fh-K1k" secondAttribute="trailing" constant="10" id="K5A-SQ-y6c"/>
+                        <constraint firstAttribute="height" constant="50" id="LTg-n8-5aJ"/>
+                        <constraint firstItem="9qL-Sg-LUi" firstAttribute="height" secondItem="XI1-bH-YcN" secondAttribute="height" id="MzD-C8-eHQ"/>
+                        <constraint firstItem="84k-fh-K1k" firstAttribute="leading" secondItem="9qL-Sg-LUi" secondAttribute="trailing" constant="10" id="gqc-pN-PNR"/>
+                        <constraint firstItem="XI1-bH-YcN" firstAttribute="top" secondItem="2qa-5y-d2a" secondAttribute="top" id="gwV-9g-2WP"/>
+                        <constraint firstItem="84k-fh-K1k" firstAttribute="centerY" secondItem="9qL-Sg-LUi" secondAttribute="centerY" id="iZJ-69-cs2"/>
+                        <constraint firstItem="9qL-Sg-LUi" firstAttribute="centerY" secondItem="XI1-bH-YcN" secondAttribute="centerY" id="l1E-fT-UTJ"/>
+                        <constraint firstItem="XI1-bH-YcN" firstAttribute="leading" secondItem="2qa-5y-d2a" secondAttribute="leading" id="v0u-BU-JYY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2qa-5y-d2a" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Rx0-p3-mwa"/>
+                <constraint firstItem="2qa-5y-d2a" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fqp-KD-IMp"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
