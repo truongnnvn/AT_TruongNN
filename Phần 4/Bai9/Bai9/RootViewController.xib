@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController" customModule="Bai9" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1t3-YD-gpd">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1v-Vs-N6Q">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="10000"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09t-Nm-hGv">
+                                    <rect key="frame" x="10" y="10" width="580" height="2313"/>
+                                    <mutableString key="text">Offshore development is the provision of software development services by suppliers 'offshore' - i.e. any country other than your own; in most cases a country different to one where the software will actually be used. Although the idea originally stems from lower labour costs or tax savings in exporting development requirements, offshore development has become increasingly popular for the high quality and skills of the labour-force found abroad. In the last decade, south-east Asia has continually proven its growing strength and knowledge in the IT field, and we're confident that our region has the biggest pool of experienced and skilled engineers out of all our global competitors.Offshore development is the provision of software development services by suppliers 'offshore' - i.e. any country other than your own; in most cases a country different to one where the software will actually be used. Although the idea originally stems from lower labour costs or tax savings in exporting development requirements, offshore development has become increasingly popular for the high quality and skills of the labour-force found abroad. In the last decade, south-east Asia has continually proven its growing strength and knowledge in the IT field, and we're confident that our region has the biggest pool of experienced and skilled engineers out of all our global competitors.Offshore development is the provision of software development services by suppliers 'offshore' - i.e. any country other than your own; in most cases a country different to one where the software will actually be used. Although the idea originally stems from lower labour costs or tax savings in exporting development requirements, offshore development has become increasingly popular for the high quality and skills of the labour-force found abroad. In the last decade, south-east Asia has continually proven its growing strength and knowledge in the IT field, and we're confident that our region has the biggest pool of experienced and skilled engineers out of all our global competitors.Offshore development is the provision of software development services by suppliers 'offshore' - i.e. any country other than your own; in most cases a country different to one where the software will actually be used. Although the idea originally stems from lower labour costs or tax savings in exporting development requirements, offshore development has become increasingly popular for the high quality and skills of the labour-force found abroad. In the last decade, south-east Asia has continually proven its growing strength and knowledge in the IT field, and we're confident that our region has the biggest pool of experienced and skilled engineers out of all our global competitors.Offshore development is the provision of software development services by suppliers 'offshore' - i.e. any country other than your own; in most cases a country different to one where the software will actually be used. Although the idea originally stems from lower labour costs or tax savings in exporting development requirements, offshore development has become increasingly popular for the high quality and skills of the labour-force found abroad. In the last decade, south-east Asia has continually proven its growing strength and knowledge in the IT field, and we're confident that our region has the biggest pool of experienced and skilled engineers out of all our global competitors.Offshore development is the provision of software development services by suppliers 'offshore' - i.e. any country other than your own; in most cases a country different to one where the software will actually be used. Although the idea originally stems from lower labour costs or tax savings in exporting development requirements, offshore development has become increasingly popular for the high quality and skills of the labour-force found abroad. In the last decade, south-east Asia has continually proven its growing strength and knowledge in the IT field, and we're confident that our region has the biggest pool of experienced and skilled engineers out of all our global competitors.Offshore development is the provision of software development services by suppliers 'offshore' - i.e. any country other than your own; in most cases a country different to one where the software will actually be used. Although the idea originally stems from lower labour costs or tax savings in exporting development requirements, offshore development has become increasingly popular for the high quality and skills of the labour-force found abroad. In the last decade, south-east Asia has continually proven its growing strength and knowledge in the IT field, and we're confident that our region has the biggest pool of experienced and skilled engineers out of all our global competitors.Offshore development is the provision of software development services by suppliers 'offshore' - i.e. any country other than your own; in most cases a country different to one where the software will actually be used. Although the idea originally stems from lower labour costs or tax savings in exporting development requirements, offshore development has become increasingly popular for the high quality and skills of the labour-force found abroad. In the last decade, south-east Asia has continually proven its growing strength and knowledge in the IT field, and we're confident that our region has the biggest pool of experienced and skilled engineers out of all our global competitors.Offshore development is the provision of software development services by suppliers 'offshore' - i.e. any country other than your own; in most cases a country different to one where the software will actually be used. Although the idea originally stems from lower labour costs or tax savings in exporting development requirements, offshore development has become increasingly popular for the high quality and skills of the labour-force found abroad. In the last decade, south-east Asia has continually proven its growing strength and knowledge in the IT field, and we're confident that our region has the biggest pool of experienced and skilled engineers out of all our global competitors.Offshore development is the provision of software development services by suppliers 'offshore' - i.e. any country other than your own; in most cases a country different to one where the software will actually be used. Although the idea originally stems from lower labour costs or tax savings in exporting development requirements, offshore development has become increasingly popular for the high quality and skills of the labour-force found abroad. In the last decade, south-east Asia has continually proven its growing strength and knowledge in the IT field, and we're confident that our region has the biggest pool of experienced and skilled engineers out of all our global competitors.Offshore development is the provision of software development services by suppliers 'offshore' - i.e. any country other than your own; in most cases a country different to one where the software will actually be used. Although the idea originally stems from lower labour costs or tax savings in exporting development requirements, offshore development has become increasingly popular for the high quality and skills of the labour-force found abroad. In the last decade, south-east Asia has continually proven its growing strength and knowledge in the IT field, and we're confident that our region has the biggest pool of experienced and skilled engineers out of all our global competitors.Offshore development is the provision of software development services by suppliers 'offshore' - i.e. any country other than your own; in most cases a country different to one where the software will actually be used. Although the idea originally stems from lower labour costs or tax savings in exporting development requirements, offshore development has become increasingly popular for the high quality and skills of the labour-force found abroad. In the last decade, south-east Asia has continually proven its growing strength and knowledge in the IT field, and we're confident that our region has the biggest pool of experienced and skilled engineers out of all our global competitors.</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="09t-Nm-hGv" firstAttribute="leading" secondItem="a1v-Vs-N6Q" secondAttribute="leading" constant="10" id="eEh-Op-Zqw"/>
+                                <constraint firstItem="09t-Nm-hGv" firstAttribute="top" secondItem="a1v-Vs-N6Q" secondAttribute="top" constant="10" id="khW-pz-iCy"/>
+                                <constraint firstAttribute="trailing" secondItem="09t-Nm-hGv" secondAttribute="trailing" constant="10" id="ssV-gR-JPK"/>
+                                <constraint firstAttribute="height" constant="10000" id="t5r-cm-tTL"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="a1v-Vs-N6Q" firstAttribute="top" secondItem="1t3-YD-gpd" secondAttribute="top" id="6Y2-P7-zJM"/>
+                        <constraint firstAttribute="bottom" secondItem="a1v-Vs-N6Q" secondAttribute="bottom" id="Jb0-V6-ZgH"/>
+                        <constraint firstAttribute="trailing" secondItem="a1v-Vs-N6Q" secondAttribute="trailing" id="joE-vy-uKX"/>
+                        <constraint firstItem="a1v-Vs-N6Q" firstAttribute="leading" secondItem="1t3-YD-gpd" secondAttribute="leading" id="nc8-7w-J5u"/>
+                    </constraints>
+                </scrollView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="PgA-uW-Arf">
+                    <rect key="frame" x="0.0" y="400" width="600" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="aao-KC-W3k"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1t3-YD-gpd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0jF-f7-KWJ"/>
+                <constraint firstAttribute="bottom" secondItem="PgA-uW-Arf" secondAttribute="bottom" id="6uf-5T-9Rq"/>
+                <constraint firstItem="PgA-uW-Arf" firstAttribute="top" secondItem="1t3-YD-gpd" secondAttribute="bottom" id="JRL-Yu-68l"/>
+                <constraint firstItem="PgA-uW-Arf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XV0-bL-B2e"/>
+                <constraint firstAttribute="trailing" secondItem="1t3-YD-gpd" secondAttribute="trailing" id="XX5-5u-3nO"/>
+                <constraint firstItem="PgA-uW-Arf" firstAttribute="top" secondItem="1t3-YD-gpd" secondAttribute="bottom" id="YvE-RN-K67"/>
+                <constraint firstAttribute="trailing" secondItem="PgA-uW-Arf" secondAttribute="trailing" id="ayg-sg-KyI"/>
+                <constraint firstItem="a1v-Vs-N6Q" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="g4k-WI-cah"/>
+                <constraint firstItem="1t3-YD-gpd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hAZ-5P-3fp"/>
+            </constraints>
+            <point key="canvasLocation" x="1589" y="366"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="2880" height="1800"/>
+    </resources>
+</document>

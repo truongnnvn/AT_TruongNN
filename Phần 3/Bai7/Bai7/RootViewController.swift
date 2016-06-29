@@ -13,6 +13,8 @@ class RootViewController: UIViewController {
     @IBOutlet weak var percentTextfield: UITextField!
     
     let myView = NSBundle.mainBundle().loadNibNamed("MyView", owner: nil, options: nil).last as! MyView
+    
+    
     @IBAction func changeSlider(sender: AnyObject) {
         self.myView.setPercentNumber(percentTextfield.text!)
         self.percentTextfield.resignFirstResponder()
@@ -30,9 +32,6 @@ class RootViewController: UIViewController {
         self.view.addSubview(myView)
     }
     
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        myView.touchesMoved(touches, withEvent: event)
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
