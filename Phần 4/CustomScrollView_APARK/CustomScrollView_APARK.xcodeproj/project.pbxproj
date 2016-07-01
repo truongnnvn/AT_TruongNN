@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48088E321D24B79F0072A266 /* close_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 48088E311D24B79F0072A266 /* close_red.png */; };
 		48879F6A1D23C234003731BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48879F691D23C234003731BE /* AppDelegate.swift */; };
 		48879F711D23C234003731BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48879F701D23C234003731BE /* Assets.xcassets */; };
 		48879F741D23C234003731BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48879F721D23C234003731BE /* LaunchScreen.storyboard */; };
 		48879F7D1D23C2A8003731BE /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48879F7B1D23C2A8003731BE /* RootViewController.swift */; };
 		48879F7E1D23C2A8003731BE /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48879F7C1D23C2A8003731BE /* RootViewController.xib */; };
 		48879F801D23C2C5003731BE /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48879F7F1D23C2C5003731BE /* CustomView.xib */; };
-		48879F821D23CB32003731BE /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 48879F811D23CB32003731BE /* 1.png */; };
-		48879F841D23CB62003731BE /* money.png in Resources */ = {isa = PBXBuildFile; fileRef = 48879F831D23CB62003731BE /* money.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48088E311D24B79F0072A266 /* close_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_red.png; sourceTree = "<group>"; };
 		48879F661D23C234003731BE /* CustomScrollView_APARK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomScrollView_APARK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48879F691D23C234003731BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48879F701D23C234003731BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -26,8 +26,6 @@
 		48879F7B1D23C2A8003731BE /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		48879F7C1D23C2A8003731BE /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		48879F7F1D23C2C5003731BE /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
-		48879F811D23CB32003731BE /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
-		48879F831D23CB62003731BE /* money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +62,7 @@
 				48879F701D23C234003731BE /* Assets.xcassets */,
 				48879F721D23C234003731BE /* LaunchScreen.storyboard */,
 				48879F751D23C234003731BE /* Info.plist */,
-				48879F811D23CB32003731BE /* 1.png */,
-				48879F831D23CB62003731BE /* money.png */,
+				48088E311D24B79F0072A266 /* close_red.png */,
 				48879F7B1D23C2A8003731BE /* RootViewController.swift */,
 				48879F7C1D23C2A8003731BE /* RootViewController.xib */,
 				48879F7F1D23C2C5003731BE /* CustomView.xib */,
@@ -133,11 +130,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				48879F741D23C234003731BE /* LaunchScreen.storyboard in Resources */,
+				48088E321D24B79F0072A266 /* close_red.png in Resources */,
 				48879F801D23C2C5003731BE /* CustomView.xib in Resources */,
-				48879F841D23CB62003731BE /* money.png in Resources */,
 				48879F711D23C234003731BE /* Assets.xcassets in Resources */,
 				48879F7E1D23C2A8003731BE /* RootViewController.xib in Resources */,
-				48879F821D23CB32003731BE /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +287,7 @@
 				48879F7A1D23C234003731BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
