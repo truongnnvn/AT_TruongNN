@@ -21,7 +21,6 @@ class SecondViewController: UIViewController {
     var age = ""
     var gender = ""
     var avatar = ""
-    var delegateSecond:ChangeDataProtocol!
 
     override func viewDidLoad() {
         super.viewDidLoad()

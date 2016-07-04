@@ -24,7 +24,7 @@ class RootViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.title = "Student List"
         myTableView.delegate = self
         myTableView.dataSource = self
-        //myTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        myTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         names = ["Nguyen", "Nhat", "Truong", "Asian"]
         ages = ["11", "12", "13", "14"]
         genders = ["Nam", "Nam", "Nam", "Nu"]
