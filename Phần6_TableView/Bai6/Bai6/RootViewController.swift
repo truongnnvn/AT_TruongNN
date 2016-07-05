@@ -15,13 +15,14 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableView: UITableView!
     
     var students = [Student]()
+    var teachers = [Teacher]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.registerNib(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
-        
+        self.automaticallyAdjustsScrollViewInsets = true
         let nib = UINib(nibName: "CustomHeaderViewCell", bundle: nil)
         self.tableView.registerNib(nib, forHeaderFooterViewReuseIdentifier: headerCellIdentifier)
 
@@ -46,12 +47,35 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
             let dataStudent = Student(name: name, age: age, gender: gender, avatar: avatar)
             students.append(dataStudent)
         }
+        
+        let path1 = NSBundle.mainBundle().pathForResource("Teacher", ofType: "plist")
+        let dataArray1 = NSArray(contentsOfFile: path1!)
+        
+        for teacher in dataArray1! {
+            
+            let avatar = teacher.objectForKey("avatar") as! String
+            let name = teacher.objectForKey("name") as! String
+            let age = teacher.objectForKey("age") as! Int
+            let gender = teacher.objectForKey("gender") as! Int
+            
+            let dataTeacher = Teacher(name: name, age: age, gender: gender, avatar: avatar)
+            teachers.append(dataTeacher)
+        }
+
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 2
     }
     
+    func updateData(indexRow: Int, student: Dictionary<String, AnyObject>) {
+        let path = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
+        let dataArray = NSMutableArray(contentsOfFile: String(path))
+        dataArray!.replaceObjectAtIndex(indexRow, withObject: student)
+        dataArray!.writeToFile(String(path), atomically: false)
+    }
+
+    // TableView
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         switch section {
@@ -88,24 +112,37 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
-    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let  headerCell = NSBundle.mainBundle().loadNibNamed("CustomHeaderViewCell", owner: self, options: nil)[0] as! CustomHeaderViewCell
-        headerCell.backgroundColor = UIColor.blueColor()
-        headerCell.nameLabel.text = "Jay"
-        headerCell.avatarImageView.image = UIImage(named: "1")
-        
-        return headerCell
-    }
-    
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 100
-    }
-    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let newVC = SecondViewController(nibName: "SecondViewController", bundle: nil)
         let student = students[indexPath.row]
         newVC.student = student
         navigationController?.pushViewController(newVC, animated: true)
+    }
+    
+    //Header
+    
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let  headerCell = NSBundle.mainBundle().loadNibNamed("CustomHeaderViewCell", owner: self, options: nil)[0] as! CustomHeaderViewCell
+
+        switch section {
+        case 0:
+            //headerCell.backgroundColor = UIColor.blueColor()
+            headerCell.nameLabel.text = teachers[section].name
+            headerCell.avatarImageView.image = UIImage(named: teachers[section].avatar)
+            headerCell.avatarImageView.image = UIImage(named: teachers[section].avatar)
+            headerCell.avatarImageView.contentMode = .ScaleAspectFit
+        default:
+            //headerCell.backgroundColor = UIColor.redColor()
+            headerCell.nameLabel.text = "Second"
+            headerCell.avatarImageView.image = UIImage(named: "2")
+            headerCell.avatarImageView.contentMode = .ScaleAspectFit
+        }
+        
+        return headerCell
+    }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
     }
     
     func circleImage(avatarImageView: UIImageView) {

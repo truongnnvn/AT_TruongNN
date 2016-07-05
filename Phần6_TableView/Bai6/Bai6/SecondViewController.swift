@@ -64,6 +64,24 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
         student.name = nameTextField.text ?? ""
         student.age = Int(ageTextField.text!)
         student.gender = genderSegmented.selectedSegmentIndex
+        
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
+        let documentsDirectory = paths.objectAtIndex(0) as! NSString
+        let path = documentsDirectory.stringByAppendingPathComponent("Student1.plist")
+        
+        let dict: NSMutableDictionary = [:]
+        //saving values
+        dict.setObject(student.avatar, forKey: "avatar")
+        dict.setObject(student.name, forKey: "name")
+        dict.setObject(student.age, forKey: "age")
+        dict.setObject(student.gender, forKey: "gender")
+        //...
+        //writing to GameData.plist
+        dict.writeToFile(path, atomically: true)
+        
+        let resultDictionary = NSMutableDictionary(contentsOfFile: path)
+        print("Saved GameData.plist file is --> \(resultDictionary?.description)")
+        
         alert("Message", message: "Successfully")
     }
 

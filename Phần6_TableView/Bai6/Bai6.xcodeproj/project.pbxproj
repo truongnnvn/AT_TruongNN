@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480F16B41D2B605900FF4CC3 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480F16B31D2B605900FF4CC3 /* Teacher.swift */; };
+		480F16B61D2B609E00FF4CC3 /* Teacher.plist in Resources */ = {isa = PBXBuildFile; fileRef = 480F16B51D2B609E00FF4CC3 /* Teacher.plist */; };
 		483970851D2A51A3000E3C8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483970841D2A51A3000E3C8D /* AppDelegate.swift */; };
 		4839708C1D2A51A3000E3C8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4839708B1D2A51A3000E3C8D /* Assets.xcassets */; };
 		4839708F1D2A51A3000E3C8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4839708D1D2A51A3000E3C8D /* LaunchScreen.storyboard */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		480F16B31D2B605900FF4CC3 /* Teacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
+		480F16B51D2B609E00FF4CC3 /* Teacher.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Teacher.plist; sourceTree = "<group>"; };
 		483970811D2A51A3000E3C8D /* Bai6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bai6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		483970841D2A51A3000E3C8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4839708B1D2A51A3000E3C8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,12 +82,14 @@
 				4839709A1D2A51CC000E3C8D /* CustomTableViewCell.swift */,
 				4839709B1D2A51CC000E3C8D /* CustomTableViewCell.xib */,
 				4839709C1D2A51CC000E3C8D /* Student.swift */,
+				480F16B31D2B605900FF4CC3 /* Teacher.swift */,
 				4839708B1D2A51A3000E3C8D /* Assets.xcassets */,
 				4839708D1D2A51A3000E3C8D /* LaunchScreen.storyboard */,
 				483970901D2A51A3000E3C8D /* Info.plist */,
 				483970AC1D2A59AE000E3C8D /* CustomHeaderViewCell.swift */,
 				483970AE1D2A59C3000E3C8D /* CustomHeaderViewCell.xib */,
 				483970B41D2A729D000E3C8D /* Student.plist */,
+				480F16B51D2B609E00FF4CC3 /* Teacher.plist */,
 			);
 			path = Bai6;
 			sourceTree = "<group>";
@@ -150,6 +156,7 @@
 				483970AF1D2A59C3000E3C8D /* CustomHeaderViewCell.xib in Resources */,
 				4839708F1D2A51A3000E3C8D /* LaunchScreen.storyboard in Resources */,
 				4839708C1D2A51A3000E3C8D /* Assets.xcassets in Resources */,
+				480F16B61D2B609E00FF4CC3 /* Teacher.plist in Resources */,
 				483970A21D2A51CC000E3C8D /* CustomTableViewCell.xib in Resources */,
 				4839709E1D2A51CC000E3C8D /* RootViewController.xib in Resources */,
 				483970B51D2A729D000E3C8D /* Student.plist in Resources */,
@@ -169,6 +176,7 @@
 				483970A31D2A51CC000E3C8D /* Student.swift in Sources */,
 				483970A11D2A51CC000E3C8D /* CustomTableViewCell.swift in Sources */,
 				483970851D2A51A3000E3C8D /* AppDelegate.swift in Sources */,
+				480F16B41D2B605900FF4CC3 /* Teacher.swift in Sources */,
 				4839709D1D2A51CC000E3C8D /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +319,7 @@
 				483970951D2A51A3000E3C8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
