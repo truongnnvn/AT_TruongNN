@@ -26,6 +26,7 @@ class CircleMenuView: UIView {
             configItems()
         }
     }
+    
     weak var centerButton: UIButton!
     private var radius: CGFloat = 0
     private var numberOfItem = 0
@@ -46,12 +47,14 @@ class CircleMenuView: UIView {
         centerButton.frame.size = sizeButton
         centerButton.center = center
         centerButton.addTarget(self, action: #selector(buttonCancelDidTap(_:)), forControlEvents: .TouchUpInside)
-        self.addSubview(centerButton)
         self.centerButton = centerButton
+        self.addSubview(centerButton)
     }
     
     private func configItems() {
         for i in 0..<numberOfItem {
+            
+            //Create SubView
             let subView = UIView()
             subView.bounds.size = CGSize(width: sizeButton.width, height: sizeButton.height + labelSize.height)
             subView.transform = CGAffineTransformMakeScale(0, 0)
@@ -59,23 +62,26 @@ class CircleMenuView: UIView {
             subView.center = centerButton.center
             subView.clipsToBounds = true
             
+            //Add buton
             let circleButton = createButton(delegate?.imageNameAtIndex(i))
             circleButton.tag = i
             circleButton.addTarget(self, action: #selector(didTapAtItem(_:)), forControlEvents: .TouchUpInside)
             subView.addSubview(circleButton)
             
+            //Add Label
             let label = UILabel(frame: CGRect(origin: CGPoint(x: 0, y: sizeButton.height), size: labelSize))
             label.textAlignment = .Center
             label.adjustsFontSizeToFitWidth = true
             label.textColor = UIColor.whiteColor()
             label.text = delegate?.titleAtIndex(i)
+            
             subView.addSubview(label)
             self.items.append(subView)
             self.addSubview(subView)
         }
         
         self.alpha = 0
-        UIView.animateWithDuration(0.6, animations: { () -> Void in
+        UIView.animateWithDuration(0.5, animations: { () -> Void in
             self.alpha = 1
         }) { (complete) -> Void in
             self.startAnimationForView()
@@ -90,7 +96,6 @@ class CircleMenuView: UIView {
         self.centerButton.hidden = true
         self.items[sender.tag].bounds.size = sizeButton
         UIView.animateWithDuration(0.5, animations: {
-
             self.items[sender.tag].center = self.center
         }) { (complete) -> Void in
             UIView.animateWithDuration(0.5, animations: {
@@ -100,6 +105,7 @@ class CircleMenuView: UIView {
             }
         }
     }
+    
     private func startAnimationForView() {
         UIView.animateWithDuration(0.5, animations: { () -> Void in
             for (index, item) in self.items.enumerate() {
@@ -108,7 +114,6 @@ class CircleMenuView: UIView {
                 item.transform = CGAffineTransformMakeScale(1, 1)
             }
         }) { (complete) -> Void in
-            
         }
     }
     
@@ -120,7 +125,6 @@ class CircleMenuView: UIView {
         let y = self.center.y - dy
         return CGPoint(x: x, y: y)
     }
-    
     
     @objc private func buttonCancelDidTap(sender: UIButton) {
         UIView.animateWithDuration(0.9, animations: {

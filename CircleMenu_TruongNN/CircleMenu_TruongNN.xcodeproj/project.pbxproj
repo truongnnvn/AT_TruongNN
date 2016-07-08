@@ -8,15 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		481280F31D2DEE83007B03A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481280F21D2DEE83007B03A8 /* AppDelegate.swift */; };
-		481280F81D2DEE83007B03A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 481280F61D2DEE83007B03A8 /* Main.storyboard */; };
 		481280FA1D2DEE83007B03A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481280F91D2DEE83007B03A8 /* Assets.xcassets */; };
 		481280FD1D2DEE83007B03A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 481280FB1D2DEE83007B03A8 /* LaunchScreen.storyboard */; };
 		481281061D2DEEBF007B03A8 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481281041D2DEEBF007B03A8 /* RootViewController.swift */; };
 		481281071D2DEEBF007B03A8 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481281051D2DEEBF007B03A8 /* RootViewController.xib */; };
-		481281091D2DEF74007B03A8 /* CircleMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481281081D2DEF74007B03A8 /* CircleMenuButton.swift */; };
-		4812810B1D2DEF89007B03A8 /* CircleMenuLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4812810A1D2DEF89007B03A8 /* CircleMenuLoader.swift */; };
-		4812810D1D2DEF90007B03A8 /* CircleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4812810C1D2DEF90007B03A8 /* CircleMenu.swift */; };
-		4812810F1D2DEFC2007B03A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4812810E1D2DEFC2007B03A8 /* ViewController.swift */; };
 		4812813D1D2E3288007B03A8 /* pa_but1.png in Resources */ = {isa = PBXBuildFile; fileRef = 481281151D2E3288007B03A8 /* pa_but1.png */; };
 		4812813E1D2E3288007B03A8 /* pa_but2.png in Resources */ = {isa = PBXBuildFile; fileRef = 481281161D2E3288007B03A8 /* pa_but2.png */; };
 		4812813F1D2E3288007B03A8 /* pa_but3.png in Resources */ = {isa = PBXBuildFile; fileRef = 481281171D2E3288007B03A8 /* pa_but3.png */; };
@@ -42,16 +37,11 @@
 /* Begin PBXFileReference section */
 		481280EF1D2DEE83007B03A8 /* CircleMenu_TruongNN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleMenu_TruongNN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		481280F21D2DEE83007B03A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		481280F71D2DEE83007B03A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		481280F91D2DEE83007B03A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		481280FC1D2DEE83007B03A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		481280FE1D2DEE83007B03A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		481281041D2DEEBF007B03A8 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		481281051D2DEEBF007B03A8 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
-		481281081D2DEF74007B03A8 /* CircleMenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenuButton.swift; sourceTree = "<group>"; };
-		4812810A1D2DEF89007B03A8 /* CircleMenuLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenuLoader.swift; sourceTree = "<group>"; };
-		4812810C1D2DEF90007B03A8 /* CircleMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenu.swift; sourceTree = "<group>"; };
-		4812810E1D2DEFC2007B03A8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		481281151D2E3288007B03A8 /* pa_but1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pa_but1.png; sourceTree = "<group>"; };
 		481281161D2E3288007B03A8 /* pa_but2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pa_but2.png; sourceTree = "<group>"; };
 		481281171D2E3288007B03A8 /* pa_but3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pa_but3.png; sourceTree = "<group>"; };
@@ -105,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				481280F21D2DEE83007B03A8 /* AppDelegate.swift */,
-				481280F61D2DEE83007B03A8 /* Main.storyboard */,
 				481280F91D2DEE83007B03A8 /* Assets.xcassets */,
 				481280FB1D2DEE83007B03A8 /* LaunchScreen.storyboard */,
 				481280FE1D2DEE83007B03A8 /* Info.plist */,
@@ -114,20 +103,8 @@
 				481281631D2E4CF5007B03A8 /* CircleMenuView.swift */,
 				481281651D2E4D06007B03A8 /* CircleMenuView.xib */,
 				481281271D2E3288007B03A8 /* CircleMenuView */,
-				481281101D2DFC90007B03A8 /* New Group */,
 			);
 			path = CircleMenu_TruongNN;
-			sourceTree = "<group>";
-		};
-		481281101D2DFC90007B03A8 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				481281081D2DEF74007B03A8 /* CircleMenuButton.swift */,
-				4812810A1D2DEF89007B03A8 /* CircleMenuLoader.swift */,
-				4812810C1D2DEF90007B03A8 /* CircleMenu.swift */,
-				4812810E1D2DEFC2007B03A8 /* ViewController.swift */,
-			);
-			name = "New Group";
 			sourceTree = "<group>";
 		};
 		481281271D2E3288007B03A8 /* CircleMenuView */ = {
@@ -235,7 +212,6 @@
 				4812813F1D2E3288007B03A8 /* pa_but3.png in Resources */,
 				481281481D2E3288007B03A8 /* but3@2x.png in Resources */,
 				4812813D1D2E3288007B03A8 /* pa_but1.png in Resources */,
-				481280F81D2DEE83007B03A8 /* Main.storyboard in Resources */,
 				481281431D2E3288007B03A8 /* but1.png in Resources */,
 				481281461D2E3288007B03A8 /* but2@2x.png in Resources */,
 			);
@@ -248,11 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4812810F1D2DEFC2007B03A8 /* ViewController.swift in Sources */,
-				4812810D1D2DEF90007B03A8 /* CircleMenu.swift in Sources */,
 				481281641D2E4CF5007B03A8 /* CircleMenuView.swift in Sources */,
-				481281091D2DEF74007B03A8 /* CircleMenuButton.swift in Sources */,
-				4812810B1D2DEF89007B03A8 /* CircleMenuLoader.swift in Sources */,
 				481280F31D2DEE83007B03A8 /* AppDelegate.swift in Sources */,
 				481281061D2DEEBF007B03A8 /* RootViewController.swift in Sources */,
 			);
@@ -261,14 +233,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		481280F61D2DEE83007B03A8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				481280F71D2DEE83007B03A8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		481280FB1D2DEE83007B03A8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
