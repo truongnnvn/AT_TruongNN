@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		481280F31D2DEE83007B03A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481280F21D2DEE83007B03A8 /* AppDelegate.swift */; };
+		481280F81D2DEE83007B03A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 481280F61D2DEE83007B03A8 /* Main.storyboard */; };
+		481280FA1D2DEE83007B03A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481280F91D2DEE83007B03A8 /* Assets.xcassets */; };
+		481280FD1D2DEE83007B03A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 481280FB1D2DEE83007B03A8 /* LaunchScreen.storyboard */; };
+		481281061D2DEEBF007B03A8 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481281041D2DEEBF007B03A8 /* RootViewController.swift */; };
+		481281071D2DEEBF007B03A8 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481281051D2DEEBF007B03A8 /* RootViewController.xib */; };
+		481281091D2DEF74007B03A8 /* CircleMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481281081D2DEF74007B03A8 /* CircleMenuButton.swift */; };
+		4812810B1D2DEF89007B03A8 /* CircleMenuLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4812810A1D2DEF89007B03A8 /* CircleMenuLoader.swift */; };
+		4812810D1D2DEF90007B03A8 /* CircleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4812810C1D2DEF90007B03A8 /* CircleMenu.swift */; };
+		4812810F1D2DEFC2007B03A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4812810E1D2DEFC2007B03A8 /* ViewController.swift */; };
+		4812813D1D2E3288007B03A8 /* pa_but1.png in Resources */ = {isa = PBXBuildFile; fileRef = 481281151D2E3288007B03A8 /* pa_but1.png */; };
+		4812813E1D2E3288007B03A8 /* pa_but2.png in Resources */ = {isa = PBXBuildFile; fileRef = 481281161D2E3288007B03A8 /* pa_but2.png */; };
+		4812813F1D2E3288007B03A8 /* pa_but3.png in Resources */ = {isa = PBXBuildFile; fileRef = 481281171D2E3288007B03A8 /* pa_but3.png */; };
+		481281401D2E3288007B03A8 /* pa_but4.png in Resources */ = {isa = PBXBuildFile; fileRef = 481281181D2E3288007B03A8 /* pa_but4.png */; };
+		481281411D2E3288007B03A8 /* pa_but5.png in Resources */ = {isa = PBXBuildFile; fileRef = 481281191D2E3288007B03A8 /* pa_but5.png */; };
+		481281421D2E3288007B03A8 /* pa_circle_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 4812811A1D2E3288007B03A8 /* pa_circle_close.png */; };
+		481281431D2E3288007B03A8 /* but1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4812811B1D2E3288007B03A8 /* but1.png */; };
+		481281441D2E3288007B03A8 /* but1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4812811C1D2E3288007B03A8 /* but1@2x.png */; };
+		481281451D2E3288007B03A8 /* but2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4812811D1D2E3288007B03A8 /* but2.png */; };
+		481281461D2E3288007B03A8 /* but2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4812811E1D2E3288007B03A8 /* but2@2x.png */; };
+		481281471D2E3288007B03A8 /* but3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4812811F1D2E3288007B03A8 /* but3.png */; };
+		481281481D2E3288007B03A8 /* but3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 481281201D2E3288007B03A8 /* but3@2x.png */; };
+		481281491D2E3288007B03A8 /* but4.png in Resources */ = {isa = PBXBuildFile; fileRef = 481281211D2E3288007B03A8 /* but4.png */; };
+		4812814A1D2E3288007B03A8 /* but4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 481281221D2E3288007B03A8 /* but4@2x.png */; };
+		4812814B1D2E3288007B03A8 /* but5.png in Resources */ = {isa = PBXBuildFile; fileRef = 481281231D2E3288007B03A8 /* but5.png */; };
+		4812814C1D2E3288007B03A8 /* but5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 481281241D2E3288007B03A8 /* but5@2x.png */; };
+		4812814D1D2E3288007B03A8 /* circle_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 481281251D2E3288007B03A8 /* circle_close.png */; };
+		4812814E1D2E3288007B03A8 /* circle_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 481281261D2E3288007B03A8 /* circle_close@2x.png */; };
+		481281641D2E4CF5007B03A8 /* CircleMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481281631D2E4CF5007B03A8 /* CircleMenuView.swift */; };
+		481281661D2E4D06007B03A8 /* CircleMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481281651D2E4D06007B03A8 /* CircleMenuView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		481280EF1D2DEE83007B03A8 /* CircleMenu_TruongNN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleMenu_TruongNN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		481280F21D2DEE83007B03A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		481280F71D2DEE83007B03A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		481280F91D2DEE83007B03A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		481280FC1D2DEE83007B03A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		481280FE1D2DEE83007B03A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		481281041D2DEEBF007B03A8 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		481281051D2DEEBF007B03A8 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		481281081D2DEF74007B03A8 /* CircleMenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenuButton.swift; sourceTree = "<group>"; };
+		4812810A1D2DEF89007B03A8 /* CircleMenuLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenuLoader.swift; sourceTree = "<group>"; };
+		4812810C1D2DEF90007B03A8 /* CircleMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenu.swift; sourceTree = "<group>"; };
+		4812810E1D2DEFC2007B03A8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		481281151D2E3288007B03A8 /* pa_but1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pa_but1.png; sourceTree = "<group>"; };
+		481281161D2E3288007B03A8 /* pa_but2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pa_but2.png; sourceTree = "<group>"; };
+		481281171D2E3288007B03A8 /* pa_but3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pa_but3.png; sourceTree = "<group>"; };
+		481281181D2E3288007B03A8 /* pa_but4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pa_but4.png; sourceTree = "<group>"; };
+		481281191D2E3288007B03A8 /* pa_but5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pa_but5.png; sourceTree = "<group>"; };
+		4812811A1D2E3288007B03A8 /* pa_circle_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pa_circle_close.png; sourceTree = "<group>"; };
+		4812811B1D2E3288007B03A8 /* but1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = but1.png; sourceTree = "<group>"; };
+		4812811C1D2E3288007B03A8 /* but1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "but1@2x.png"; sourceTree = "<group>"; };
+		4812811D1D2E3288007B03A8 /* but2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = but2.png; sourceTree = "<group>"; };
+		4812811E1D2E3288007B03A8 /* but2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "but2@2x.png"; sourceTree = "<group>"; };
+		4812811F1D2E3288007B03A8 /* but3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = but3.png; sourceTree = "<group>"; };
+		481281201D2E3288007B03A8 /* but3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "but3@2x.png"; sourceTree = "<group>"; };
+		481281211D2E3288007B03A8 /* but4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = but4.png; sourceTree = "<group>"; };
+		481281221D2E3288007B03A8 /* but4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "but4@2x.png"; sourceTree = "<group>"; };
+		481281231D2E3288007B03A8 /* but5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = but5.png; sourceTree = "<group>"; };
+		481281241D2E3288007B03A8 /* but5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "but5@2x.png"; sourceTree = "<group>"; };
+		481281251D2E3288007B03A8 /* circle_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_close.png; sourceTree = "<group>"; };
+		481281261D2E3288007B03A8 /* circle_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle_close@2x.png"; sourceTree = "<group>"; };
+		481281631D2E4CF5007B03A8 /* CircleMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenuView.swift; sourceTree = "<group>"; };
+		481281651D2E4D06007B03A8 /* CircleMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleMenuView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		481280EC1D2DEE83007B03A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		481280E61D2DEE83007B03A8 = {
+			isa = PBXGroup;
+			children = (
+				481280F11D2DEE83007B03A8 /* CircleMenu_TruongNN */,
+				481280F01D2DEE83007B03A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		481280F01D2DEE83007B03A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				481280EF1D2DEE83007B03A8 /* CircleMenu_TruongNN.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		481280F11D2DEE83007B03A8 /* CircleMenu_TruongNN */ = {
+			isa = PBXGroup;
+			children = (
+				481280F21D2DEE83007B03A8 /* AppDelegate.swift */,
+				481280F61D2DEE83007B03A8 /* Main.storyboard */,
+				481280F91D2DEE83007B03A8 /* Assets.xcassets */,
+				481280FB1D2DEE83007B03A8 /* LaunchScreen.storyboard */,
+				481280FE1D2DEE83007B03A8 /* Info.plist */,
+				481281041D2DEEBF007B03A8 /* RootViewController.swift */,
+				481281051D2DEEBF007B03A8 /* RootViewController.xib */,
+				481281631D2E4CF5007B03A8 /* CircleMenuView.swift */,
+				481281651D2E4D06007B03A8 /* CircleMenuView.xib */,
+				481281271D2E3288007B03A8 /* CircleMenuView */,
+				481281101D2DFC90007B03A8 /* New Group */,
+			);
+			path = CircleMenu_TruongNN;
+			sourceTree = "<group>";
+		};
+		481281101D2DFC90007B03A8 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				481281081D2DEF74007B03A8 /* CircleMenuButton.swift */,
+				4812810A1D2DEF89007B03A8 /* CircleMenuLoader.swift */,
+				4812810C1D2DEF90007B03A8 /* CircleMenu.swift */,
+				4812810E1D2DEFC2007B03A8 /* ViewController.swift */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		481281271D2E3288007B03A8 /* CircleMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				481281151D2E3288007B03A8 /* pa_but1.png */,
+				481281161D2E3288007B03A8 /* pa_but2.png */,
+				481281171D2E3288007B03A8 /* pa_but3.png */,
+				481281181D2E3288007B03A8 /* pa_but4.png */,
+				481281191D2E3288007B03A8 /* pa_but5.png */,
+				4812811A1D2E3288007B03A8 /* pa_circle_close.png */,
+				4812811B1D2E3288007B03A8 /* but1.png */,
+				4812811C1D2E3288007B03A8 /* but1@2x.png */,
+				4812811D1D2E3288007B03A8 /* but2.png */,
+				4812811E1D2E3288007B03A8 /* but2@2x.png */,
+				4812811F1D2E3288007B03A8 /* but3.png */,
+				481281201D2E3288007B03A8 /* but3@2x.png */,
+				481281211D2E3288007B03A8 /* but4.png */,
+				481281221D2E3288007B03A8 /* but4@2x.png */,
+				481281231D2E3288007B03A8 /* but5.png */,
+				481281241D2E3288007B03A8 /* but5@2x.png */,
+				481281251D2E3288007B03A8 /* circle_close.png */,
+				481281261D2E3288007B03A8 /* circle_close@2x.png */,
+			);
+			name = CircleMenuView;
+			path = "/Users/truongnguyen/Downloads/zexyios-master/Zexy/Resources/Images/common";
+			sourceTree = "<absolute>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		481280EE1D2DEE83007B03A8 /* CircleMenu_TruongNN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 481281011D2DEE83007B03A8 /* Build configuration list for PBXNativeTarget "CircleMenu_TruongNN" */;
+			buildPhases = (
+				481280EB1D2DEE83007B03A8 /* Sources */,
+				481280EC1D2DEE83007B03A8 /* Frameworks */,
+				481280ED1D2DEE83007B03A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CircleMenu_TruongNN;
+			productName = CircleMenu_TruongNN;
+			productReference = 481280EF1D2DEE83007B03A8 /* CircleMenu_TruongNN.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		481280E71D2DEE83007B03A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = TruongNguyen;
+				TargetAttributes = {
+					481280EE1D2DEE83007B03A8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 564CD86DP8;
+					};
+				};
+			};
+			buildConfigurationList = 481280EA1D2DEE83007B03A8 /* Build configuration list for PBXProject "CircleMenu_TruongNN" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 481280E61D2DEE83007B03A8;
+			productRefGroup = 481280F01D2DEE83007B03A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				481280EE1D2DEE83007B03A8 /* CircleMenu_TruongNN */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		481280ED1D2DEE83007B03A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				481281411D2E3288007B03A8 /* pa_but5.png in Resources */,
+				4812814E1D2E3288007B03A8 /* circle_close@2x.png in Resources */,
+				481280FD1D2DEE83007B03A8 /* LaunchScreen.storyboard in Resources */,
+				481281661D2E4D06007B03A8 /* CircleMenuView.xib in Resources */,
+				4812814C1D2E3288007B03A8 /* but5@2x.png in Resources */,
+				481281491D2E3288007B03A8 /* but4.png in Resources */,
+				4812814D1D2E3288007B03A8 /* circle_close.png in Resources */,
+				481281451D2E3288007B03A8 /* but2.png in Resources */,
+				481280FA1D2DEE83007B03A8 /* Assets.xcassets in Resources */,
+				481281071D2DEEBF007B03A8 /* RootViewController.xib in Resources */,
+				481281441D2E3288007B03A8 /* but1@2x.png in Resources */,
+				4812813E1D2E3288007B03A8 /* pa_but2.png in Resources */,
+				481281401D2E3288007B03A8 /* pa_but4.png in Resources */,
+				481281421D2E3288007B03A8 /* pa_circle_close.png in Resources */,
+				481281471D2E3288007B03A8 /* but3.png in Resources */,
+				4812814B1D2E3288007B03A8 /* but5.png in Resources */,
+				4812814A1D2E3288007B03A8 /* but4@2x.png in Resources */,
+				4812813F1D2E3288007B03A8 /* pa_but3.png in Resources */,
+				481281481D2E3288007B03A8 /* but3@2x.png in Resources */,
+				4812813D1D2E3288007B03A8 /* pa_but1.png in Resources */,
+				481280F81D2DEE83007B03A8 /* Main.storyboard in Resources */,
+				481281431D2E3288007B03A8 /* but1.png in Resources */,
+				481281461D2E3288007B03A8 /* but2@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		481280EB1D2DEE83007B03A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4812810F1D2DEFC2007B03A8 /* ViewController.swift in Sources */,
+				4812810D1D2DEF90007B03A8 /* CircleMenu.swift in Sources */,
+				481281641D2E4CF5007B03A8 /* CircleMenuView.swift in Sources */,
+				481281091D2DEF74007B03A8 /* CircleMenuButton.swift in Sources */,
+				4812810B1D2DEF89007B03A8 /* CircleMenuLoader.swift in Sources */,
+				481280F31D2DEE83007B03A8 /* AppDelegate.swift in Sources */,
+				481281061D2DEEBF007B03A8 /* RootViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		481280F61D2DEE83007B03A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				481280F71D2DEE83007B03A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		481280FB1D2DEE83007B03A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				481280FC1D2DEE83007B03A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		481280FF1D2DEE83007B03A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		481281001D2DEE83007B03A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		481281021D2DEE83007B03A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CircleMenu_TruongNN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TruongNguyen.CircleMenu-TruongNN";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		481281031D2DEE83007B03A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CircleMenu_TruongNN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TruongNguyen.CircleMenu-TruongNN";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		481280EA1D2DEE83007B03A8 /* Build configuration list for PBXProject "CircleMenu_TruongNN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				481280FF1D2DEE83007B03A8 /* Debug */,
+				481281001D2DEE83007B03A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		481281011D2DEE83007B03A8 /* Build configuration list for PBXNativeTarget "CircleMenu_TruongNN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				481281021D2DEE83007B03A8 /* Debug */,
+				481281031D2DEE83007B03A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 481280E71D2DEE83007B03A8 /* Project object */;
+}
