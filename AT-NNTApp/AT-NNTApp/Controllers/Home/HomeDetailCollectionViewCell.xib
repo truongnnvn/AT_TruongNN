@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeDetailCollectionViewCell" customModule="AT_NNTApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="240" height="120"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iHw-Rx-xZL">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="120"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iHw-Rx-xZL" secondAttribute="trailing" id="RJv-vC-sa9"/>
+                <constraint firstAttribute="bottom" secondItem="iHw-Rx-xZL" secondAttribute="bottom" id="TpN-La-Ahh"/>
+                <constraint firstItem="iHw-Rx-xZL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="f9a-ci-gPs"/>
+                <constraint firstItem="iHw-Rx-xZL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vPc-cY-Jdg"/>
+            </constraints>
+            <connections>
+                <outlet property="foodImageView" destination="iHw-Rx-xZL" id="RB3-QG-Hjl"/>
+            </connections>
+            <point key="canvasLocation" x="419" y="391"/>
+        </collectionViewCell>
+    </objects>
+</document>
