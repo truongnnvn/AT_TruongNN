@@ -11,12 +11,12 @@ import UIKit
 class RootViewController: UIViewController {
     
     weak var circleMenuView: CircleMenuView!
-    let dataSrouce: [(title: String, imageName: String)] = [("Name 1", "but1"),
+    let dataSource: [(title: String, imageName: String)] = [("Name 1", "but1"),
                                                             ("Name 2", "but2"),
                                                             ("Name 3", "but3"),
                                                             ("Name 4", "but4"),
                                                             ("Name 5", "but5")]
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -36,15 +36,15 @@ class RootViewController: UIViewController {
 extension RootViewController: CircleMenuViewDelegate {
     
     func numberOfItem() -> Int! {
-        return self.dataSrouce.count
+        return self.dataSource.count
     }
     
     func titleAtIndex(index: Int) -> String! {
-        return self.dataSrouce[index].title
+        return self.dataSource[index].title
     }
     
     func imageNameAtIndex(index: Int) -> String! {
-        return self.dataSrouce[index].imageName
+        return self.dataSource[index].imageName
     }
  }
 

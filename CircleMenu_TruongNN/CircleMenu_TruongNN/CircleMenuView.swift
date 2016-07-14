@@ -19,6 +19,7 @@ protocol CircleMenuViewDelegate: NSObjectProtocol {
 }
 
 class CircleMenuView: UIView {
+    
     weak var delegate: CircleMenuViewDelegate? {
         didSet {
             self.numberOfItem = (delegate?.numberOfItem())!
@@ -27,18 +28,22 @@ class CircleMenuView: UIView {
         }
     }
     
+    //MARK: - Public
+    
     weak var centerButton: UIButton!
-    private var radius: CGFloat = 0
-    private var numberOfItem = 0
-    private var radian = 0.0
-    private var items: [UIView] = []
-    private var location: [CGPoint] = []
     
     convenience init(frame: CGRect, radius: CGFloat) {
         self.init(frame: frame)
         self.radius = radius
         self.configView()
     }
+    
+    //MARK:- Private
+    private var radius: CGFloat = 0
+    private var numberOfItem = 0
+    private var radian = 0.0
+    private var items: [UIView] = []
+    private var location: [CGPoint] = []
     
     private func configView() {
         self.backgroundColor = UIColor(red: 85/255, green: 85/255, blue: 85/255, alpha: 0.7)
@@ -106,6 +111,21 @@ class CircleMenuView: UIView {
         }
     }
     
+    @objc private func buttonCancelDidTap(sender: UIButton) {
+        UIView.animateWithDuration(0.9, animations: {
+            for item in self.items {
+                item.center = self.center
+                item.transform = CGAffineTransformMakeScale(0.01, 0.01)
+            }
+        }) { (complete) -> Void in
+            UIView.animateWithDuration(0.5, delay: 0.3, options: .TransitionNone, animations: {
+                self.centerButton.alpha = 0
+                }, completion: { (finished) in
+                    self.removeFromSuperview()
+            })
+        }
+    }
+    
     private func startAnimationForView() {
         UIView.animateWithDuration(0.5, animations: { () -> Void in
             for (index, item) in self.items.enumerate() {
@@ -125,22 +145,7 @@ class CircleMenuView: UIView {
         let y = self.center.y - dy
         return CGPoint(x: x, y: y)
     }
-    
-    @objc private func buttonCancelDidTap(sender: UIButton) {
-        UIView.animateWithDuration(0.9, animations: {
-            for item in self.items {
-                item.center = self.center
-                item.transform = CGAffineTransformMakeScale(0.01, 0.01)
-            }
-        }) { (complete) -> Void in
-            UIView.animateWithDuration(0.5, delay: 0.3, options: .TransitionNone, animations: {
-                self.centerButton.alpha = 0
-                }, completion: { (finished) in
-                    self.removeFromSuperview()
-            })
-        }
-    }
-    
+
     private func createButton(imageURL: String?) -> UIButton {
         let button = UIButton(type: .Custom)
         if let imageURL = imageURL {

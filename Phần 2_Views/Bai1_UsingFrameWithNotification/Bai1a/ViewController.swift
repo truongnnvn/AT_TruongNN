@@ -51,6 +51,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    
+    
     override func viewWillDisappear(animated: Bool) {
         NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: self.view.window)
         NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: self.view.window)

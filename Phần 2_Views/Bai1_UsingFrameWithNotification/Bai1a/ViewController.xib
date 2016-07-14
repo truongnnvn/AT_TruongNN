@@ -18,7 +18,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input data" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gcc-Wv-7nJ">
-                    <rect key="frame" x="87" y="488" width="200" height="30"/>
+                    <rect key="frame" x="87" y="229" width="200" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="200" id="PKW-30-B0n"/>
                     </constraints>
@@ -26,7 +26,7 @@
                     <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vo-40-XbL">
-                    <rect key="frame" x="166" y="532" width="42" height="21"/>
+                    <rect key="frame" x="166" y="273" width="42" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="23H-N2-3Qg"/>
                     </constraints>
@@ -35,7 +35,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1v-qZ-cuF">
-                    <rect key="frame" x="172" y="566" width="30" height="30"/>
+                    <rect key="frame" x="172" y="307" width="30" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="30" id="3L6-7e-85B"/>
                         <constraint firstAttribute="height" constant="30" id="PHB-DV-P13"/>
@@ -54,7 +54,7 @@
                 <constraint firstItem="gcc-Wv-7nJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3Lm-d2-VWh"/>
                 <constraint firstItem="U1v-qZ-cuF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eOs-27-5mZ"/>
                 <constraint firstItem="9Vo-40-XbL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="f9g-PH-TAR"/>
-                <constraint firstItem="gcc-Wv-7nJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="488" id="gCI-Qn-qUo"/>
+                <constraint firstItem="gcc-Wv-7nJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="229" id="gCI-Qn-qUo"/>
                 <constraint firstItem="U1v-qZ-cuF" firstAttribute="top" secondItem="9Vo-40-XbL" secondAttribute="bottom" constant="13" id="kOS-7w-4SM"/>
                 <constraint firstItem="9Vo-40-XbL" firstAttribute="top" secondItem="gcc-Wv-7nJ" secondAttribute="bottom" constant="14" id="lTs-Tt-CAW"/>
             </constraints>
