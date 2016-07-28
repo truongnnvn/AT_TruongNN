@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Phi Lu</key>
+	<dict>
+		<key>imageRestaurant</key>
+		<string>rest1</string>
+		<key>address</key>
+		<string>423 Hà Huy Tập, An Khê, Đà Nẵng</string>
+		<key>shortDes</key>
+		<string>mon ngon moi ngay</string>
+		<key>longDes</key>
+		<string>Đi dạo vòng vòng tìm chỗ ăn vặt thì phát hiện ra quán này. Nhóm mình vô là cô vừa mở cửa nên chọn đc chỗ khá mát mẻ, rộng rãi. Do đi du lịch nên cả nhóm muốn ăn thử hết mấy loại bánh trên thực đơn cho biết. Bánh kẹp giòn, lạ, chấm với nước me ăn ngon cực luôn. Nhóm mình có ăn pate nướng, bánh tráng &quot;cuốn dẻo bò khô&quot;, phô mai nướng trứng, bánh tráng mực nướng.... Nói chung ăn rất ngon mà giá cũng phải chăng - 8k/dĩa. Duy chỉ có bánh tráng đà lạt là khá mắc -25k/dĩa nhưng bù lại lớp trứng dày và nhân khá nhiều so với các chỗ bán khác. Nhóm mình ăn tổng cộng 11 dĩa tính luôn bánh tráng đà lạt và 5 ly nước mía, chỉ tốn 142k. Khá ưng ý. Nếu có dịp chắc chắn sẽ quay lại.</string>
+		<key>menu</key>
+		<array>
+			<string>food1</string>
+			<string>food2</string>
+			<string>food3</string>
+		</array>
+		<key>latitude</key>
+		<real>16.075365</real>
+		<key>longtitude</key>
+		<real>108.233753</real>
+		<key>favorite</key>
+		<false/>
+	</dict>
+	<key>Cung Dinh</key>
+	<dict>
+		<key>imageRestaurant</key>
+		<string>rest2</string>
+		<key>address</key>
+		<string>336A Phan Chu Trinh, Quận Hải Châu, Đà Nẵng</string>
+		<key>shortDes</key>
+		<string>mon ngon moi ngay</string>
+		<key>longDes</key>
+		<string>Đi dạo vòng vòng tìm chỗ ăn vặt thì phát hiện ra quán này. Nhóm mình vô là cô vừa mở cửa nên chọn đc chỗ khá mát mẻ, rộng rãi. Do đi du lịch nên cả nhóm muốn ăn thử hết mấy loại bánh trên thực đơn cho biết. Bánh kẹp giòn, lạ, chấm với nước me ăn ngon cực luôn. Nhóm mình có ăn pate nướng, bánh tráng &quot;cuốn dẻo bò khô&quot;, phô mai nướng trứng, bánh tráng mực nướng.... Nói chung ăn rất ngon mà giá cũng phải chăng - 8k/dĩa. Duy chỉ có bánh tráng đà lạt là khá mắc -25k/dĩa nhưng bù lại lớp trứng dày và nhân khá nhiều so với các chỗ bán khác. Nhóm mình ăn tổng cộng 11 dĩa tính luôn bánh tráng đà lạt và 5 ly nước mía, chỉ tốn 142k. Khá ưng ý. Nếu có dịp chắc chắn sẽ quay lại.</string>
+		<key>menu</key>
+		<array>
+			<string>food1</string>
+			<string>food2</string>
+			<string>food3</string>
+		</array>
+		<key>latitude</key>
+		<real>16.075234</real>
+		<key>longtitude</key>
+		<real>108.223121</real>
+		<key>favorite</key>
+		<false/>
+	</dict>
+	<key>Phuoc Thai</key>
+	<dict>
+		<key>imageRestaurant</key>
+		<string>rest3</string>
+		<key>address</key>
+		<string>543/18 Tôn Đức Thắng, Quận Liên Chiểu, Đà Nẵng</string>
+		<key>shortDes</key>
+		<string>mon ngon moi ngay</string>
+		<key>longDes</key>
+		<string>Đi dạo vòng vòng tìm chỗ ăn vặt thì phát hiện ra quán này. Nhóm mình vô là cô vừa mở cửa nên chọn đc chỗ khá mát mẻ, rộng rãi. Do đi du lịch nên cả nhóm muốn ăn thử hết mấy loại bánh trên thực đơn cho biết. Bánh kẹp giòn, lạ, chấm với nước me ăn ngon cực luôn. Nhóm mình có ăn pate nướng, bánh tráng &quot;cuốn dẻo bò khô&quot;, phô mai nướng trứng, bánh tráng mực nướng.... Nói chung ăn rất ngon mà giá cũng phải chăng - 8k/dĩa. Duy chỉ có bánh tráng đà lạt là khá mắc -25k/dĩa nhưng bù lại lớp trứng dày và nhân khá nhiều so với các chỗ bán khác. Nhóm mình ăn tổng cộng 11 dĩa tính luôn bánh tráng đà lạt và 5 ly nước mía, chỉ tốn 142k. Khá ưng ý. Nếu có dịp chắc chắn sẽ quay lại.</string>
+		<key>menu</key>
+		<array>
+			<string>food1</string>
+			<string>food2</string>
+			<string>food3</string>
+		</array>
+		<key>latitude</key>
+		<real>16.075233</real>
+		<key>longtitude</key>
+		<real>108.233751</real>
+		<key>favorite</key>
+		<false/>
+	</dict>
+	<key>Golden</key>
+	<dict>
+		<key>imageRestaurant</key>
+		<string>rest4</string>
+		<key>address</key>
+		<string>108 Nguyễn Văn Siêu, Quận Sơn Trà, Đà Nẵng</string>
+		<key>shortDes</key>
+		<string>mon ngon moi ngay</string>
+		<key>longDes</key>
+		<string>Đi dạo vòng vòng tìm chỗ ăn vặt thì phát hiện ra quán này. Nhóm mình vô là cô vừa mở cửa nên chọn đc chỗ khá mát mẻ, rộng rãi. Do đi du lịch nên cả nhóm muốn ăn thử hết mấy loại bánh trên thực đơn cho biết. Bánh kẹp giòn, lạ, chấm với nước me ăn ngon cực luôn. Nhóm mình có ăn pate nướng, bánh tráng &quot;cuốn dẻo bò khô&quot;, phô mai nướng trứng, bánh tráng mực nướng.... Nói chung ăn rất ngon mà giá cũng phải chăng - 8k/dĩa. Duy chỉ có bánh tráng đà lạt là khá mắc -25k/dĩa nhưng bù lại lớp trứng dày và nhân khá nhiều so với các chỗ bán khác. Nhóm mình ăn tổng cộng 11 dĩa tính luôn bánh tráng đà lạt và 5 ly nước mía, chỉ tốn 142k. Khá ưng ý. Nếu có dịp chắc chắn sẽ quay lại.</string>
+		<key>menu</key>
+		<array>
+			<string>food1</string>
+			<string>food2</string>
+			<string>food3</string>
+		</array>
+		<key>latitude</key>
+		<real>16.075213</real>
+		<key>longtitude</key>
+		<real>108.233751</real>
+		<key>favorite</key>
+		<false/>
+	</dict>
+	<key>Cat Tuong</key>
+	<dict>
+		<key>imageRestaurant</key>
+		<string>rest5</string>
+		<key>address</key>
+		<string>408/15 Hoàng Diệu, Quận Hải Châu, Đà Nẵng</string>
+		<key>shortDes</key>
+		<string>mon ngon moi ngay</string>
+		<key>longDes</key>
+		<string>Đi dạo vòng vòng tìm chỗ ăn vặt thì phát hiện ra quán này. Nhóm mình vô là cô vừa mở cửa nên chọn đc chỗ khá mát mẻ, rộng rãi. Do đi du lịch nên cả nhóm muốn ăn thử hết mấy loại bánh trên thực đơn cho biết. Bánh kẹp giòn, lạ, chấm với nước me ăn ngon cực luôn. Nhóm mình có ăn pate nướng, bánh tráng &quot;cuốn dẻo bò khô&quot;, phô mai nướng trứng, bánh tráng mực nướng.... Nói chung ăn rất ngon mà giá cũng phải chăng - 8k/dĩa. Duy chỉ có bánh tráng đà lạt là khá mắc -25k/dĩa nhưng bù lại lớp trứng dày và nhân khá nhiều so với các chỗ bán khác. Nhóm mình ăn tổng cộng 11 dĩa tính luôn bánh tráng đà lạt và 5 ly nước mía, chỉ tốn 142k. Khá ưng ý. Nếu có dịp chắc chắn sẽ quay lại.</string>
+		<key>menu</key>
+		<array>
+			<string>food1</string>
+			<string>food2</string>
+			<string>food3</string>
+		</array>
+		<key>latitude</key>
+		<real>16.073123</real>
+		<key>longtitude</key>
+		<real>108.212311</real>
+		<key>favorite</key>
+		<false/>
+	</dict>
+	<key>Dong Duong</key>
+	<dict>
+		<key>imageRestaurant</key>
+		<string>rest6</string>
+		<key>address</key>
+		<string>62/2A Núi Thành, Quận Hải Châu, Đà Nẵng</string>
+		<key>shortDes</key>
+		<string>mon ngon moi ngay</string>
+		<key>longDes</key>
+		<string>Đi dạo vòng vòng tìm chỗ ăn vặt thì phát hiện ra quán này. Nhóm mình vô là cô vừa mở cửa nên chọn đc chỗ khá mát mẻ, rộng rãi. Do đi du lịch nên cả nhóm muốn ăn thử hết mấy loại bánh trên thực đơn cho biết. Bánh kẹp giòn, lạ, chấm với nước me ăn ngon cực luôn. Nhóm mình có ăn pate nướng, bánh tráng &quot;cuốn dẻo bò khô&quot;, phô mai nướng trứng, bánh tráng mực nướng.... Nói chung ăn rất ngon mà giá cũng phải chăng - 8k/dĩa. Duy chỉ có bánh tráng đà lạt là khá mắc -25k/dĩa nhưng bù lại lớp trứng dày và nhân khá nhiều so với các chỗ bán khác. Nhóm mình ăn tổng cộng 11 dĩa tính luôn bánh tráng đà lạt và 5 ly nước mía, chỉ tốn 142k. Khá ưng ý. Nếu có dịp chắc chắn sẽ quay lại.</string>
+		<key>menu</key>
+		<array>
+			<string>food1</string>
+			<string>food2</string>
+			<string>food3</string>
+		</array>
+		<key>latitude</key>
+		<real>16.075121</real>
+		<key>longtitude</key>
+		<real>108.233456</real>
+		<key>favorite</key>
+		<false/>
+	</dict>
+	<key>Phuong Dong</key>
+	<dict>
+		<key>imageRestaurant</key>
+		<string>rest7</string>
+		<key>address</key>
+		<string>K168/7 Trưng Nữ Vương, Quận Hải Châu, Đà Nẵng</string>
+		<key>shortDes</key>
+		<string>mon ngon moi ngay</string>
+		<key>longDes</key>
+		<string>Đi dạo vòng vòng tìm chỗ ăn vặt thì phát hiện ra quán này. Nhóm mình vô là cô vừa mở cửa nên chọn đc chỗ khá mát mẻ, rộng rãi. Do đi du lịch nên cả nhóm muốn ăn thử hết mấy loại bánh trên thực đơn cho biết. Bánh kẹp giòn, lạ, chấm với nước me ăn ngon cực luôn. Nhóm mình có ăn pate nướng, bánh tráng &quot;cuốn dẻo bò khô&quot;, phô mai nướng trứng, bánh tráng mực nướng.... Nói chung ăn rất ngon mà giá cũng phải chăng - 8k/dĩa. Duy chỉ có bánh tráng đà lạt là khá mắc -25k/dĩa nhưng bù lại lớp trứng dày và nhân khá nhiều so với các chỗ bán khác. Nhóm mình ăn tổng cộng 11 dĩa tính luôn bánh tráng đà lạt và 5 ly nước mía, chỉ tốn 142k. Khá ưng ý. Nếu có dịp chắc chắn sẽ quay lại.</string>
+		<key>menu</key>
+		<array>
+			<string>food1</string>
+			<string>food2</string>
+			<string>food3</string>
+		</array>
+		<key>latitude</key>
+		<real>16.075134</real>
+		<key>longtitude</key>
+		<real>108.233234</real>
+		<key>favorite</key>
+		<false/>
+	</dict>
+	<key>Hung Gia Tran</key>
+	<dict>
+		<key>imageRestaurant</key>
+		<string>rest8</string>
+		<key>address</key>
+		<string>K142/46/09 Điện Biên Phủ, Quận Thanh Khê, Đà Nẵng</string>
+		<key>shortDes</key>
+		<string>mon ngon moi ngay</string>
+		<key>longDes</key>
+		<string>Đi dạo vòng vòng tìm chỗ ăn vặt thì phát hiện ra quán này. Nhóm mình vô là cô vừa mở cửa nên chọn đc chỗ khá mát mẻ, rộng rãi. Do đi du lịch nên cả nhóm muốn ăn thử hết mấy loại bánh trên thực đơn cho biết. Bánh kẹp giòn, lạ, chấm với nước me ăn ngon cực luôn. Nhóm mình có ăn pate nướng, bánh tráng &quot;cuốn dẻo bò khô&quot;, phô mai nướng trứng, bánh tráng mực nướng.... Nói chung ăn rất ngon mà giá cũng phải chăng - 8k/dĩa. Duy chỉ có bánh tráng đà lạt là khá mắc -25k/dĩa nhưng bù lại lớp trứng dày và nhân khá nhiều so với các chỗ bán khác. Nhóm mình ăn tổng cộng 11 dĩa tính luôn bánh tráng đà lạt và 5 ly nước mía, chỉ tốn 142k. Khá ưng ý. Nếu có dịp chắc chắn sẽ quay lại.</string>
+		<key>menu</key>
+		<array>
+			<string>food1</string>
+			<string>food2</string>
+			<string>food3</string>
+		</array>
+		<key>latitude</key>
+        <real>16.075345</real>
+        <key>longtitude</key>
+        <real>108.233653</real>
+		<key>favorite</key>
+		<false/>
+	</dict>
+	<key>King Place</key>
+	<dict>
+		<key>imageRestaurant</key>
+		<string>rest9</string>
+		<key>address</key>
+		<string>300 Lê Duẩn, Quận Thanh Khê, Đà Nẵng</string>
+		<key>shortDes</key>
+		<string>mon ngon moi ngay</string>
+		<key>longDes</key>
+		<string>Đi dạo vòng vòng tìm chỗ ăn vặt thì phát hiện ra quán này. Nhóm mình vô là cô vừa mở cửa nên chọn đc chỗ khá mát mẻ, rộng rãi. Do đi du lịch nên cả nhóm muốn ăn thử hết mấy loại bánh trên thực đơn cho biết. Bánh kẹp giòn, lạ, chấm với nước me ăn ngon cực luôn. Nhóm mình có ăn pate nướng, bánh tráng &quot;cuốn dẻo bò khô&quot;, phô mai nướng trứng, bánh tráng mực nướng.... Nói chung ăn rất ngon mà giá cũng phải chăng - 8k/dĩa. Duy chỉ có bánh tráng đà lạt là khá mắc -25k/dĩa nhưng bù lại lớp trứng dày và nhân khá nhiều so với các chỗ bán khác. Nhóm mình ăn tổng cộng 11 dĩa tính luôn bánh tráng đà lạt và 5 ly nước mía, chỉ tốn 142k. Khá ưng ý. Nếu có dịp chắc chắn sẽ quay lại.</string>
+		<key>menu</key>
+		<array>
+			<string>food1</string>
+			<string>food2</string>
+			<string>food3</string>
+		</array>
+		<key>latitude</key>
+        <real>16.075165</real>
+        <key>longtitude</key>
+        <real>108.233353</real>
+		<key>favorite</key>
+		<false/>
+	</dict>
+	<key>Minh Toan Galaxy</key>
+	<dict>
+		<key>imageRestaurant</key>
+		<string>rest10</string>
+		<key>address</key>
+		<string>864 Trần Cao Vân, Quận Thanh Khê, Đà Nẵng</string>
+		<key>shortDes</key>
+		<string>mon ngon moi ngay</string>
+		<key>longDes</key>
+		<string>Đi dạo vòng vòng tìm chỗ ăn vặt thì phát hiện ra quán này. Nhóm mình vô là cô vừa mở cửa nên chọn đc chỗ khá mát mẻ, rộng rãi. Do đi du lịch nên cả nhóm muốn ăn thử hết mấy loại bánh trên thực đơn cho biết. Bánh kẹp giòn, lạ, chấm với nước me ăn ngon cực luôn. Nhóm mình có ăn pate nướng, bánh tráng &quot;cuốn dẻo bò khô&quot;, phô mai nướng trứng, bánh tráng mực nướng.... Nói chung ăn rất ngon mà giá cũng phải chăng - 8k/dĩa. Duy chỉ có bánh tráng đà lạt là khá mắc -25k/dĩa nhưng bù lại lớp trứng dày và nhân khá nhiều so với các chỗ bán khác. Nhóm mình ăn tổng cộng 11 dĩa tính luôn bánh tráng đà lạt và 5 ly nước mía, chỉ tốn 142k. Khá ưng ý. Nếu có dịp chắc chắn sẽ quay lại.</string>
+		<key>menu</key>
+		<array>
+			<string>food1</string>
+			<string>food2</string>
+			<string>food3</string>
+		</array>
+		<key>latitude</key>
+        <real>16.075385</real>
+        <key>longtitude</key>
+        <real>108.233553</real>
+		<key>favorite</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

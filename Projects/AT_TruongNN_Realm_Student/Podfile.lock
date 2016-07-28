@@ -1,0 +1,25 @@
+PODS:
+  - IQKeyboardManagerSwift (4.0.4)
+  - ObjectMapper (1.2.0)
+  - Realm (1.0.2):
+    - Realm/Headers (= 1.0.2)
+  - Realm/Headers (1.0.2)
+  - RealmS (1.6.0):
+    - ObjectMapper (~> 1.2.0)
+    - RealmSwift (~> 1.0)
+  - RealmSwift (1.0.2):
+    - Realm (= 1.0.2)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - RealmS
+  - RealmSwift
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: e0964d04d6a29b71016fd346dca13ecb80a2823a
+  ObjectMapper: b1e9c7c8a9f6400b72690c80072c131504caa66f
+  Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
+  RealmS: 6e252342582d15c19dbf9c09b90e249b05f6d8ea
+  RealmSwift: 82f3ac5e24530143dddfde2033acc0d308f27d96
+
+COCOAPODS: 0.39.0
